@@ -7,18 +7,18 @@
 </head>
 <body>
   <header class="main-header">
-    <a class="main-header-logo">
+    <a class="main-header__logo">
       <img src="img/" alt="Main logo" width="154" height="64">
     </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li><a href="#">Каталог</a>
           <ul class="drop-menu">
-            <li><a href="#">Новинки</a></li>
-            <li><a href="#">Сливочное</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый лед</a></li>
-            <li><a href="#">Мелорин</a></li>
+            <li><a class="drop-menu__link" href="#">Новинки</a></li>
+            <li><a class="drop-menu__link" href="catalog.html">Сливочное</a></li>
+            <li><a class="drop-menu__link" href="#">Щербеты</a></li>
+            <li><a class="drop-menu__link" href="#">Фруктовый лед</a></li>
+            <li><a class="drop-menu__link" href="#">Мелорин</a></li>
           </ul>
         </li>
         <li><a href="#">Доставка и оплата</a></li>
@@ -31,30 +31,31 @@
       </ul>
       <div class="contact">
         <p>
-          С 10 до 20, ежедневно<br>
-          8 812 450-25-25
+          С 10 до 20, ежедневно
+          <a href="tel:8812450-25-25" >8 812 450-25-25</a>
         </p>
       </div>
     </nav>
   </header>
+
   <main class="container">
-    <h1 class="visually hidden">Глейси Магазин</h1>
+    <h1 class="visually-hidden">Глейси Магазин</h1>
 
     <div class="gallery-slider">
       <figure>
         <b>Крем-брюле и пломбир с малиновым джемом</b>
-        <input type="button" name="" value="Давайте оба!">
+        <a href="#" class="button">Давайте оба!</a>
       </figure>
     </div>
 
     <section class="banners">
-      <section class="banner1">
+      <section class="banner">
           <h2>Малинка даром</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a href="#">Хочу варенье!</a>
+          <a href="#" class="button">Хочу варенье!</a>
       </section>
 
-      <section class="banner2">
+      <section class="banner">
         <h2>Шоколадки даром!</h2>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
         <a href="#">Хочу шоколадки!</a>
@@ -65,34 +66,30 @@
       <ul class="hits-list">
         <li>
           <figure class="ice-cream">
-            <b>Хит</b>
-            <img src="img/" alt="Vanila ice cream" width="267" height="267">
+            <img src="img/" alt="Creamy with orange jam and citrus chips" width="267" height="267">
             <p>310 <span>P</span>/kg</p>
             <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
           </figure>
         </li>
         <li>
           <figure class="ice-cream">
-            <b>Хит</b>
-            <img src="img/" alt="Choko ice cream" width="267" height="267">
+            <img src="img/" alt="Creamy coffee with chocolate pieces" width="267" height="267">
             <p>380 <span>P</span>/kg</p>
-            <figcaption>Сливочно-кофейное с кусочками шоколада</figcaption>
+            <figcaption><a href="#"></a>Сливочно-кофейное с кусочками шоколада</figcaption>
           </figure>
         </li>
         <li>
           <figure class="ice-cream">
-            <b>Хит</b>
-            <img src="img/" alt="Strawsberry ice cream" width="267" height="267">
+            <img src="img/" alt="Creamy strawberry with white chocolate sprinkles" width="267" height="267">
             <p>355 <span>P</span>/kg</p>
-            <figcaption>Сливочно-клубничное с присыпкой из белого шоколада</figcaption>
+            <figcaption><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
           </figure>
         </li>
         <li>
           <figure class="ice-cream">
-            <b>Хит</b>
-            <img src="img/" alt="Caramel ice cream" width="267" height="267">
+            <img src="img/" alt="Creamy creme brulee with caramel sauce" width="267" height="267">
             <p>415 <span>P</span>/kg</p>
-            <figcaption>Сливочное крем-брюле с карамельной подливкой</figcaption>
+            <figcaption><a href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
           </figure>
         </li>
       </ul>
@@ -117,7 +114,7 @@
       <form class="" action="index.html" method="post">
         <label for="email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </label>
         <input type="mail" name="" value="" id="email" placeholder="Электронная почта">
-        <input type="submit" name="" value="Отправить">
+        <input type="submit" name="" value="Отправить" class="button">
       </form>
     </section>
 

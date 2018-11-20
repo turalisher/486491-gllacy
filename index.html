@@ -8,9 +8,9 @@
 <body>
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="img/" alt="Main logo" width="154" height="64">
+      <img src="img/svg/logo.svg" alt="Main logo" width="154" height="64">
     </a>
-    <nav class="main_header__main-navigation">
+    <nav class="main-header__main-navigation">
       <ul class="site-navigation">
         <li><a href="#">Каталог</a>
           <ul class="drop-menu">
@@ -24,12 +24,12 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
-      <ul class="main_header__user-navigation">
-        <li class="user-search"><input type="search" name="" value="" placeholder="search"></li>
-        <li class="login-link">Вход</li>
-        <li class="cart">Корзина</li>
+      <ul class="main-header__user-navigation">
+        <li class="user-navigation__search"><input type="search" name="" value="" placeholder="search"></li>
+        <li class="user-navigation__link">Вход</li>
+        <li class="user-navigation__cart">Корзина</li>
       </ul>
-      <div class="main_header__contact">
+      <div class="main-header__contact">
         <p>
           С 10 до 20, ежедневно
           <a href="tel:8812450-25-25" >8 812 450-25-25</a>
@@ -39,7 +39,7 @@
   </header>
 
   <main class="container">
-    <h1 class="container_hidden">Глейси Магазин</h1>
+    <h1 class="container_visually_hidden">Глейси Магазин</h1>
 
     <div class="container__gallery-slider">
       <figure>
@@ -49,13 +49,13 @@
     </div>
 
     <section class="container__banners">
-      <section class="banner">
+      <section class="banners__banner">
           <h2>Малинка даром</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a href="#" class="button">Хочу варенье!</a>
       </section>
 
-      <section class="banner">
+      <section class="banners__banner">
         <h2>Шоколадки даром!</h2>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
         <a href="#">Хочу шоколадки!</a>
@@ -65,29 +65,29 @@
     <section class="container__hits">
       <ul class="hits-list">
         <li>
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy with orange jam and citrus chips" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-with-orange-jam-and-citrus-chips.png" alt="Creamy with orange jam and citrus chips" width="267" height="267">
             <p>310 <span>P</span>/kg</p>
             <figcaption>Сливочное с апельсиновым джемом и цитрусовой стружкой</figcaption>
           </figure>
         </li>
         <li>
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy coffee with chocolate pieces" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-coffee-with-chocolate-pieces.png" alt="Creamy coffee with chocolate pieces" width="267" height="267">
             <p>380 <span>P</span>/kg</p>
             <figcaption><a href="#"></a>Сливочно-кофейное с кусочками шоколада</figcaption>
           </figure>
         </li>
         <li>
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy strawberry with white chocolate sprinkles" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-strawberry-with-white-chocolate-sprinkles.png" alt="Creamy strawberry with white chocolate sprinkles" width="267" height="267">
             <p>355 <span>P</span>/kg</p>
             <figcaption><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
           </figure>
         </li>
         <li>
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy creme brulee with caramel sauce" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-creme-brulee-with-caramel-sauce.png" alt="Creamy creme brulee with caramel sauce" width="267" height="267">
             <p>415 <span>P</span>/kg</p>
             <figcaption><a href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
           </figure>
@@ -124,23 +124,23 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__footer-social">
+    <div class="main-footer__social">
       <ul>
-        <li><a class="social-button" href="#">Твитер</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button twitter" href="#">Твитер</a></li>
+        <li><a class="social-button instagram" href="#">Инстаграм</a></li>
+        <li><a class="social-button facebook" href="#">Фейсбук</a></li>
+        <li><a class="social-button vk" href="#">Вконтакте</a></li>
       </ul>
     </div>
 
-    <ul class="main-footer__footer-list">
+    <ul class="main-footer__links">
       <li><a href="#"><b>Для поставщиков</b></a></li>
       <li><a href="#">О производстве</a></li>
       <li><a href="#">Наши документы</a></li>
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
 
-    <p class="main-footer__footer-copyright">
+    <p class="main-footer__copyright">
       <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       Сделано в HTML Academy 2017
     </p>

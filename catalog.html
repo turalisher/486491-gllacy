@@ -7,9 +7,9 @@
   <body>
     <header class="main-header">
       <a class="main-header__logo">
-        <img src="img/" alt="Main logo" width="154" height="64">
+        <img src="img/svg/logo.svg" alt="Main logo" width="154" height="64">
       </a>
-      <nav class="main_header__main-navigation">
+      <nav class="main-header__main-navigation">
         <ul class="site-navigation">
           <li><a href="#">Каталог</a>
             <ul class="drop-menu">
@@ -23,12 +23,12 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <ul class="main_header__user-navigation">
-          <li class="user-search"><input type="search" name="" value="" placeholder="search"></li>
-          <li class="login-link">Вход</li>
-          <li class="cart">Корзина</li>
+        <ul class="main-header__user-navigation">
+          <li class="user-navigation__search"><input type="search" name="" value="" placeholder="search"></li>
+          <li class="user-navigation__link">Вход</li>
+          <li class="user-navigation__cart">Корзина</li>
         </ul>
-        <div class="main_header__contact">
+        <div class="main-header__contact">
           <p>
             С 10 до 20, ежедневно
             <a href="tel:8812450-25-25" >8 812 450-25-25</a>
@@ -39,7 +39,7 @@
 
     <!--Класс контейнер оставить, т.к совподает название с main на index.html? -->
     <main class="container">
-      <h1 class="container_hidden">Глейси Магазин</h1>
+      <h1 class="container_visually_hidden">Глейси Магазин</h1>
 
       <p class="containter__path">Главная/Каталог/Сливочное</p>
       <h2 class="container__title">Сливочное мороженое</h2>
@@ -57,13 +57,13 @@
                 </select>
             </div>
           </<section>
+        </form>
 
           <section class="filter">
               <label for="price">Цена 100 руб.-500 руб.</label>
               <div class="filter__paramaters">
                 <input type="range" id="price">
               </div>
-
           </section>
 
           <section class="filter">
@@ -76,9 +76,9 @@
               </div>
           </section>
 
-          <section class="filler">
-            <label for="filler">Наполнители:</label>
-            <div class="filter__paramaters" id="filler">
+          <section class="filter">
+            <label for="filter">Наполнители:</label>
+            <div class="filter__paramaters" id="filter">
               <input type="checkbox" name="chocolate" value="chocolate" id="chocolate"><label for="chocolate">Шоколадные</label>
               <input type="checkbox" name="sugar" value="sugar" id="sugar"><label for="sugar">Сахарные присыпки</label>
               <input type="checkbox" name="fruits" value="fruits" id="fruits"><label for="fruits">Фрукты</label>
@@ -91,75 +91,75 @@
       </section>
 
       <section class="container__content">
-        <div class="content__items">
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy with orange jam and citrus chips" width="267" height="267">
+        <div class="content__list">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-with-orange-jam-and-citrus-chips.png" alt="Creamy with orange jam and citrus chips" width="267" height="267">
             <p>310 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
           </figure>
 
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy coffee with chocolate pieces" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-coffee-with-chocolate-pieces.png" alt="Creamy coffee with chocolate pieces" width="267" height="267">
             <p>380 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
           </figure>
 
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy strawberry with white chocolate sprinkles" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-strawberry-with-white-chocolate-sprinkles.png" alt="Creamy strawberry with white chocolate sprinkles" width="267" height="267">
             <p>355 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
           </figure>
 
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy creme brulee with caramel sauce" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-creme-brulee-with-caramel-sauce.png" alt="Creamy creme brulee with caramel sauce" width="267" height="267">
             <p>415 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
           </figure>
 
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy with lingonberry jam" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-with-lingonberry-jam.png" alt="Creamy with lingonberry jam" width="267" height="267">
             <p>325 <span>P</span>/kg</p>
             <figcaption><a href="#">Сливочное с брусничным джемом</a></figcaption>
           </figure>
 
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy Blueberry with Whole Blueberries" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-Blueberry-with-Whole-Blueberries.png" alt="Creamy Blueberry with Whole Blueberries" width="267" height="267">
             <p>410 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочно-черничное с цельными ягодами черники </a></figcaption>
           </figure>
 
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy lemon with caramel dressing" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-lemon-with-caramel-dressing.png" alt="Creamy lemon with caramel dressing" width="267" height="267">
             <p>375 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочно-лимонное с карамельной присыпкой</a></figcaption>
           </figure>
 
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy Chocolate Chips" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-Chocolate-Chips.png" alt="Creamy Chocolate Chips" width="267" height="267">
             <p>320 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#"></a>Сливочное с шоколадной стружкой</figcaption>
           </figure>
 
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy-vanilla with chocolate pieces" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-vanilla-with-chocolate-pieces.png" alt="Creamy-vanilla with chocolate pieces" width="267" height="267">
             <p>440 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочно-ванильное с кусочками шоколада</a></figcaption>
           </figure>
 
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy with menthol syrup" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-with-menthol-syrup.png" alt="Creamy with menthol syrup" width="267" height="267">
             <p>435 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочноe с ментоловым сиропом</a></figcaption>
           </figure>
 
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy with black chocolate pieces" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-with-black-chocolate-pieces.png" alt="Creamy with black chocolate pieces" width="267" height="267">
             <p>355 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочное с кусочками черного шоколада</a></figcaption>
           </figure>
 
-          <figure class="ice-cream">
-            <img src="img/" alt="Creamy Mint Syrup" width="267" height="267">
+          <figure class="list__ice-cream">
+            <img src="img/ice_creams/Creamy-Mint-Syrup.png" alt="Creamy Mint Syrup" width="267" height="267">
             <p>420 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочное с мятным сиропом</a></figcaption>
           </figure>
@@ -180,7 +180,7 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__footer-social">
+      <div class="main-footer__social">
         <ul>
           <li><a class="social-button twitter" href="#">Твитер</a></li>
           <li><a class="social-button instagram" href="#">Инстаграм</a></li>
@@ -189,14 +189,14 @@
         </ul>
       </div>
 
-      <ul class="main-footer__footer-list">
+      <ul class="main-footer__links">
         <li><a href="#"><b>Для поставщиков</b></a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
 
-      <p class="main-footer__footer-copyright">
+      <p class="main-footer__copyright">
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
         Сделано в HTML Academy 2017
       </p>

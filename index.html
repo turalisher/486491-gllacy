@@ -14,20 +14,20 @@
       <ul class="site-navigation">
         <li><a href="#">Каталог</a>
           <ul class="drop-menu">
-            <li><a class="drop-menu__link" href="#">Новинки</a></li>
-            <li><a class="drop-menu__link" href="catalog.html">Сливочное</a></li>
-            <li><a class="drop-menu__link" href="#">Щербеты</a></li>
-            <li><a class="drop-menu__link" href="#">Фруктовый лед</a></li>
-            <li><a class="drop-menu__link" href="#">Мелорин</a></li>
+            <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого">Новинки</a></li>
+            <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
+            <li><a class="drop-menu__link" href="#" aria-label="Щербет">Щербеты</a></li>
+            <li><a class="drop-menu__link" href="#" aria-label="Фруктовый лед">Фруктовый лед</a></li>
+            <li><a class="drop-menu__link" href="#" aria-label="Мелорин">Мелорин</a></li>
           </ul>
         </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
       <ul class="main-header__user-navigation">
-        <li class="user-navigation__search"><input type="search" name="" value="" placeholder="search"></li>
-        <li class="user-navigation__link">Вход</li>
-        <li class="user-navigation__cart">Корзина</li>
+        <li class="user-navigation__search"><button>Поиск</button></li>
+        <li class="user-navigation__profile"><button>Вход</button></li>
+        <li class="user-navigation__cart"><button>Корзина</button></li>
       </ul>
       <div class="main-header__contact">
         <p>
@@ -39,11 +39,19 @@
   </header>
 
   <main class="container">
-    <h1 class="container_visually_hidden">Глейси Магазин</h1>
+    <h1 class="visually_hidden">Глейси Магазин</h1>
 
     <div class="container__gallery-slider">
       <figure>
         <b>Крем-брюле и пломбир с малиновым джемом</b>
+        <a href="#" class="button">Давайте оба!</a>
+      </figure>
+      <figure>
+        <b>Шоколадный пломбир и лимонный сорбет </b>
+        <a href="#" class="button">Давайте оба!</a>
+      </figure>
+      <figure>
+        <b>Пломбир с помадкой и клубничный щербет</b>
         <a href="#" class="button">Давайте оба!</a>
       </figure>
     </div>
@@ -122,6 +130,45 @@
       <!--Карта и обратная связь-->
     </section>
   </main>
+
+  <section class="modal modal-login">
+    <form class="login-form" action="" method="post">
+      <p>
+        <label for="user-login">Электронная почта</label>
+        <input id="user-login" type="email" name="mail" placeholder="Электронная почта">
+      </p>
+      <p>
+        <label for="user-password">Пароль</label>
+        <input id="user-password" type="password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-password-info">
+        <a href="#">Забыли пароль?</a>
+        <a href="#">Новая регистрация</a>
+      </p>
+      <button class="button" type="submit">
+        Войти
+      </button>
+    </form>
+  </section>
+
+  <section class="modal modal-feedback">
+    <h2>Мы обязательно Вам ответим!</h2>
+    <form class="" action="index.html" method="post">
+      <p>
+        <label class="visually_hidden" for="user-name">Как Вас зовут?</label>
+        <input type="text" id="user-name" name="user-name" value="" placeholder="Как Вас зовут?">
+      </p>
+      <p>
+        <label class="visually_hidden" for="user-mail">Ваша почта для ответа?</label>
+        <input type="text" id="user-mail" name="user-mail" value="" placeholder="Ваша почта для ответа?">
+      </p>
+      <p>
+        <label class="visually_hidden" for="user-message">Напишите что-нибудь</label>
+        <textarea id="user-message"name="message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+      </p>
+      <button type="submit" name="button">Отправить</button>
+    </form>
+  </section>
 
   <footer class="main-footer">
     <div class="main-footer__social">

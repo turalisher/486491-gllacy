@@ -13,20 +13,20 @@
         <ul class="site-navigation">
           <li><a href="#">Каталог</a>
             <ul class="drop-menu">
-              <li><a class="drop-menu__link" href="#">Новинки</a></li>
-              <li><a class="drop-menu__link" href="catalog.html">Сливочное</a></li>
-              <li><a class="drop-menu__link" href="#">Щербеты</a></li>
-              <li><a class="drop-menu__link" href="#">Фруктовый лед</a></li>
-              <li><a class="drop-menu__link" href="#">Мелорин</a></li>
+              <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого">Новинки</a></li>
+              <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
+              <li><a class="drop-menu__link" href="#" aria-label="Щербет">Щербеты</a></li>
+              <li><a class="drop-menu__link" href="#" aria-label="Фруктовый лед">Фруктовый лед</a></li>
+              <li><a class="drop-menu__link" href="#" aria-label="Мелорин">Мелорин</a></li>
             </ul>
           </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
         <ul class="main-header__user-navigation">
-          <li class="user-navigation__search"><input type="search" name="" value="" placeholder="search"></li>
-          <li class="user-navigation__link">Вход</li>
-          <li class="user-navigation__cart">Корзина</li>
+          <li class="user-navigation__search"><button>Поиск</button></li>
+          <li class="user-navigation__profile"><button>Вход</button></li>
+          <li class="user-navigation__cart"><button>Корзина</button></li>
         </ul>
         <div class="main-header__contact">
           <p>
@@ -39,7 +39,7 @@
 
     <!--Класс контейнер оставить, т.к совподает название с main на index.html? -->
     <main class="container">
-      <h1 class="container_visually_hidden">Глейси Магазин</h1>
+      <h1 class="visually_hidden">Глейси Магазин</h1>
 
       <p class="containter__path">Главная/Каталог/Сливочное</p>
       <h2 class="container__title">Сливочное мороженое</h2>
@@ -67,11 +67,11 @@
           </section>
 
           <section class="filter">
-              <label>Жирность:</label>
+              <label for="fat">Жирность:</label>
               <div class="filter__paramaters">
-                <input type="radio" name="fat" value="0" id="nofat"><label for="nofat">0%</label>
-                <input type="radio" name="fat" value="10" id="10"><label for="10">до 10%</label>
-                <input type="radio" name="fat" value="30" id="30"><label for="30">до 30%</label>
+                <input type="radio" name="fat" value="0" id="fat"><label for="nofat">0%</label>
+                <input type="radio" name="fat" value="10" id="fat"><label for="10">до 10%</label>
+                <input type="radio" name="fat" value="30" id="fat"><label for="30">до 30%</label>
                 <input type="radio" name="fat" value="31" id="fat"><label for="fat">выше 30%</label>
               </div>
           </section>

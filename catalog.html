@@ -11,7 +11,7 @@
       </a>
       <nav class="main-header__main-navigation">
         <ul class="site-navigation">
-          <li><a href="#">Каталог</a>
+          <li><a href="#" aria-label="Каталог нашего мороженого">Каталог</a>
             <ul class="drop-menu">
               <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого">Новинки</a></li>
               <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
@@ -20,18 +20,46 @@
               <li><a class="drop-menu__link" href="#" aria-label="Мелорин">Мелорин</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
+          <li><a href="#" aria-label="Доставка и оплата">Доставка и оплата</a></li>
+          <li><a href="#" aria-label="О нас">О компании</a></li>
         </ul>
+        <!--Правильно??? -->
         <ul class="main-header__user-navigation">
-          <li class="user-navigation__search"><button>Поиск</button></li>
-          <li class="user-navigation__profile"><button>Вход</button></li>
-          <li class="user-navigation__cart"><button>Корзина</button></li>
+          <li class="user-navigation__search">
+              <button class="user-navigation__button" type="button" aria-label="Поиск">Поиск</button>
+          </li>
+          <li class="user-navigation__profile">
+            <button class="user-navigation__button" type="submit">Вход</button>
+          </li>
+          <li class="user-navigation__cart">
+            <button class="button" type="button" aria-label="Корзина">2 товара"</button>
+            <section class="cart__full">
+              <form class="" action="index.html" method="post">
+                <table>
+                  <tr>
+                    <td>Удалить</td>
+                    <td>Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг Х 200 руб.</td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>Удалить</td>
+                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг Х 300 руб.</td>
+                    <td>450 руб.</td>
+                  </tr>
+                </table>
+                <hr>
+                <p>Итого: 750 руб.</p>
+                <button type="submit" name="button" aria-label="Оформить заказ">Оформить заказ</button>
+              </form>
+            </section>
+          </li>
         </ul>
         <div class="main-header__contact">
           <p>
             С 10 до 20, ежедневно
-            <a href="tel:8812450-25-25" >8 812 450-25-25</a>
+            <a href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
           </p>
         </div>
       </nav>
@@ -96,72 +124,84 @@
             <img src="img/ice_creams/Creamy-with-orange-jam-and-citrus-chips.png" alt="Creamy with orange jam and citrus chips" width="267" height="267">
             <p>310 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
           <figure class="list__ice-cream">
             <img src="img/ice_creams/Creamy-coffee-with-chocolate-pieces.png" alt="Creamy coffee with chocolate pieces" width="267" height="267">
             <p>380 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
           <figure class="list__ice-cream">
             <img src="img/ice_creams/Creamy-strawberry-with-white-chocolate-sprinkles.png" alt="Creamy strawberry with white chocolate sprinkles" width="267" height="267">
             <p>355 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
           <figure class="list__ice-cream">
             <img src="img/ice_creams/Creamy-creme-brulee-with-caramel-sauce.png" alt="Creamy creme brulee with caramel sauce" width="267" height="267">
             <p>415 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
           <figure class="list__ice-cream">
             <img src="img/ice_creams/Creamy-with-lingonberry-jam.png" alt="Creamy with lingonberry jam" width="267" height="267">
             <p>325 <span>P</span>/kg</p>
             <figcaption><a href="#">Сливочное с брусничным джемом</a></figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
           <figure class="list__ice-cream">
             <img src="img/ice_creams/Creamy-Blueberry-with-Whole-Blueberries.png" alt="Creamy Blueberry with Whole Blueberries" width="267" height="267">
             <p>410 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочно-черничное с цельными ягодами черники </a></figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
           <figure class="list__ice-cream">
             <img src="img/ice_creams/Creamy-lemon-with-caramel-dressing.png" alt="Creamy lemon with caramel dressing" width="267" height="267">
             <p>375 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочно-лимонное с карамельной присыпкой</a></figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
           <figure class="list__ice-cream">
             <img src="img/ice_creams/Creamy-Chocolate-Chips.png" alt="Creamy Chocolate Chips" width="267" height="267">
             <p>320 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#"></a>Сливочное с шоколадной стружкой</figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
           <figure class="list__ice-cream">
             <img src="img/ice_creams/Creamy-vanilla-with-chocolate-pieces.png" alt="Creamy-vanilla with chocolate pieces" width="267" height="267">
             <p>440 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочно-ванильное с кусочками шоколада</a></figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
           <figure class="list__ice-cream">
             <img src="img/ice_creams/Creamy-with-menthol-syrup.png" alt="Creamy with menthol syrup" width="267" height="267">
             <p>435 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочноe с ментоловым сиропом</a></figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
           <figure class="list__ice-cream">
             <img src="img/ice_creams/Creamy-with-black-chocolate-pieces.png" alt="Creamy with black chocolate pieces" width="267" height="267">
             <p>355 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочное с кусочками черного шоколада</a></figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
           <figure class="list__ice-cream">
             <img src="img/ice_creams/Creamy-Mint-Syrup.png" alt="Creamy Mint Syrup" width="267" height="267">
             <p>420 <span>P</span>/kg</p>
             <figcaption><a class="ice-cream__link" href="#">Сливочное с мятным сиропом</a></figcaption>
+            <button class="button visually_hidden" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </figure>
 
         </div>
@@ -182,22 +222,22 @@
     <footer class="main-footer">
       <div class="main-footer__social">
         <ul>
-          <li><a class="social-button twitter" href="#">Твитер</a></li>
-          <li><a class="social-button instagram" href="#">Инстаграм</a></li>
-          <li><a class="social-button facebook" href="#">Фейсбук</a></li>
-          <li><a class="social-button vk" href="#">Вконтакте</a></li>
+          <li><a class="social-button twitter" href="#" aria-label="Твитер">Твитер</a></li>
+          <li><a class="social-button instagram" href="#" aria-label="Инстаграм">Инстаграм</a></li>
+          <li><a class="social-button facebook" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+          <li><a class="social-button vk" href="#" aria-label="Вконтакте">Вконтакте</a></li>
         </ul>
       </div>
 
       <ul class="main-footer__links">
-        <li><a href="#"><b>Для поставщиков</b></a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
+        <li><a href="#" aria-label="Для поставщиков"><b>Для поставщиков</b></a></li>
+        <li><a href="#" aria-label="Производство">О производстве</a></li>
+        <li><a href="#" aria-label="Документы">Наши документы</a></li>
+        <li><a href="#" aria-label="Экологические стандарты">Экологические стандарты</a></li>
       </ul>
 
       <p class="main-footer__copyright">
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru" aria-label="HTML Академия">HTML Academy</a>
         Сделано в HTML Academy 2017
       </p>
     </footer>

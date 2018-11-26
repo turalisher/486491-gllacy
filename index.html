@@ -12,7 +12,7 @@
     </a>
     <nav class="main-header__main-navigation">
       <ul class="site-navigation">
-        <li><a href="#">Каталог</a>
+        <li><a href="#" aria-label="Каталог нашего мороженого">Каталог</a>
           <ul class="drop-menu">
             <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого">Новинки</a></li>
             <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
@@ -21,18 +21,48 @@
             <li><a class="drop-menu__link" href="#" aria-label="Мелорин">Мелорин</a></li>
           </ul>
         </li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О компании</a></li>
+        <li><a href="#" aria-label="Доставка и оплата">Доставка и оплата</a></li>
+        <li><a href="#" aria-label="О нас">О компании</a></li>
       </ul>
+      <!--Правильно??? -->
       <ul class="main-header__user-navigation">
-        <li class="user-navigation__search"><button>Поиск</button></li>
-        <li class="user-navigation__profile"><button>Вход</button></li>
-        <li class="user-navigation__cart"><button>Корзина</button></li>
+        <li class="user-navigation__search">
+            <button class="user-navigation__button" type="button" aria-label="Поиск">Поиск</button>
+            <form class="" action="index.html" method="post">
+              <label class="visually_hidden" for="search">Поиск</label>
+              <input type="search" id="search" name="search" value="search" aria-label="Поиск на сайте" placeholder="Что ищем?">
+            </form>
+        </li>
+        <li class="user-navigation__profile">
+          <button class="user-navigation__button" type="submit">Вход</button>
+          <section class="modal modal-login">
+            <form class="login-form" action="" method="post">
+              <p>
+                <label for="user-login">Электронная почта</label>
+                <input id="user-login" type="email" name="mail" placeholder="Электронная почта" aria-label="Электронная почта">
+              </p>
+              <p>
+                <label for="user-password">Пароль</label>
+                <input id="user-password" type="password" name="password" placeholder="Пароль" aria-label="Пароль">
+              </p>
+              <p class="login-password-info">
+                <a href="#" aria-label="Забыли пароль">Забыли пароль?</a>
+                <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
+              </p>
+              <button class="button" type="submit" aria-label="Войти в личный кабинет">
+                Войти
+              </button>
+            </form>
+          </section>
+        </li>
+        <li class="user-navigation__cart">
+          <button class="button" type="button" aria-label="Корзина">Корзина</button>
+        </li>
       </ul>
       <div class="main-header__contact">
         <p>
           С 10 до 20, ежедневно
-          <a href="tel:8812450-25-25" >8 812 450-25-25</a>
+          <a href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
         </p>
       </div>
     </nav>
@@ -44,15 +74,15 @@
     <div class="container__gallery-slider">
       <figure>
         <b>Крем-брюле и пломбир с малиновым джемом</b>
-        <a href="#" class="button">Давайте оба!</a>
+        <a href="#" class="button" aria-label="Хочу оба!">Давайте оба!</a>
       </figure>
       <figure>
         <b>Шоколадный пломбир и лимонный сорбет </b>
-        <a href="#" class="button">Давайте оба!</a>
+        <a href="#" class="button" aria-label="Хочу оба!">Давайте оба!</a>
       </figure>
       <figure>
         <b>Пломбир с помадкой и клубничный щербет</b>
-        <a href="#" class="button">Давайте оба!</a>
+        <a href="#" class="button" aria-label="Хочу оба!">Давайте оба!</a>
       </figure>
     </div>
 
@@ -115,41 +145,32 @@
 
     <article class="container__blog">
       <h3>Новое в нашем блоге</h3>
-      <a href="#"><strong>10 способов сервировки фруктовых щербетов к столу</strong></a>
+      <a href="#" aria-label="10 способов сервировки фруктовых щербетов к столу"><strong>10 способов сервировки фруктовых щербетов к столу</strong></a>
     </article>
 
     <section class="container__subscription">
       <form class="" action="index.html" method="post">
         <label for="email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </label>
-        <input type="mail" name="" value="" id="email" placeholder="Электронная почта">
-        <input type="submit" name="" value="Отправить" class="button">
+        <input type="mail" name="" value="" id="email" placeholder="Электронная почта" aria-label="Введите электронную почту">
+        <button type="submit" name="button" aria-label="Отправить">Отправить</button>
       </form>
     </section>
 
     <section class="container__location">
-      <!--Карта и обратная связь-->
+      <!--Карта-->
+      <section class="location__feedback">
+        <address class="">
+          Адрес главного офиса и офлайн-магазина:
+          <a href="http://maps.google.com/?q=ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-label="Местонахождение">ул. Большая Конюшенная 19/8, Санкт-Петербург</a>
+          <p>Для заказов по телефону:</p>
+          <a href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
+          <p>(с 10 до 20 ежедневно)</p>
+        </address>
+        <button class="button" type="button" name="button">Форма обратной связи</button>
+
+      </section>
     </section>
   </main>
-
-  <section class="modal modal-login">
-    <form class="login-form" action="" method="post">
-      <p>
-        <label for="user-login">Электронная почта</label>
-        <input id="user-login" type="email" name="mail" placeholder="Электронная почта">
-      </p>
-      <p>
-        <label for="user-password">Пароль</label>
-        <input id="user-password" type="password" name="password" placeholder="Пароль">
-      </p>
-      <p class="login-password-info">
-        <a href="#">Забыли пароль?</a>
-        <a href="#">Новая регистрация</a>
-      </p>
-      <button class="button" type="submit">
-        Войти
-      </button>
-    </form>
-  </section>
 
   <section class="modal modal-feedback">
     <h2>Мы обязательно Вам ответим!</h2>
@@ -166,29 +187,29 @@
         <label class="visually_hidden" for="user-message">Напишите что-нибудь</label>
         <textarea id="user-message"name="message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
       </p>
-      <button type="submit" name="button">Отправить</button>
+      <button type="submit" name="button" aria-label="Отправить">Отправить</button>
     </form>
   </section>
 
   <footer class="main-footer">
     <div class="main-footer__social">
       <ul>
-        <li><a class="social-button twitter" href="#">Твитер</a></li>
-        <li><a class="social-button instagram" href="#">Инстаграм</a></li>
-        <li><a class="social-button facebook" href="#">Фейсбук</a></li>
-        <li><a class="social-button vk" href="#">Вконтакте</a></li>
+        <li><a class="social-button twitter" href="#" aria-label="Твитер">Твитер</a></li>
+        <li><a class="social-button instagram" href="#" aria-label="Инстаграм">Инстаграм</a></li>
+        <li><a class="social-button facebook" href="#" aria-label="Фейсбук">Фейсбук</a></li>
+        <li><a class="social-button vk" href="#" aria-label="Вконтакте">Вконтакте</a></li>
       </ul>
     </div>
 
     <ul class="main-footer__links">
-      <li><a href="#"><b>Для поставщиков</b></a></li>
-      <li><a href="#">О производстве</a></li>
-      <li><a href="#">Наши документы</a></li>
-      <li><a href="#">Экологические стандарты</a></li>
+      <li><a href="#" aria-label="Для поставщиков"><b>Для поставщиков</b></a></li>
+      <li><a href="#" aria-label="Производство">О производстве</a></li>
+      <li><a href="#" aria-label="Документы">Наши документы</a></li>
+      <li><a href="#" aria-label="Экологические стандарты">Экологические стандарты</a></li>
     </ul>
 
     <p class="main-footer__copyright">
-      <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      <a class="button" href="https://htmlacademy.ru" aria-label="HTML Академия">HTML Academy</a>
       Сделано в HTML Academy 2017
     </p>
   </footer>

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Глейси</title>
 </head>
 <body>
@@ -12,9 +14,9 @@
     </a>
     <nav class="main-header__main-navigation">
       <ul class="site-navigation">
-        <li><a href="#" aria-label="Каталог нашего мороженого">Каталог</a>
+        <li><a class="drop-menu__root" href="#" aria-label="Каталог нашего мороженого">Каталог</a>
           <ul class="drop-menu">
-            <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого">Новинки</a></li>
+            <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого"><b>Новинки</b></a></li>
             <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
             <li><a class="drop-menu__link" href="#" aria-label="Щербет">Щербеты</a></li>
             <li><a class="drop-menu__link" href="#" aria-label="Фруктовый лед">Фруктовый лед</a></li>
@@ -24,11 +26,10 @@
         <li><a href="#" aria-label="Доставка и оплата">Доставка и оплата</a></li>
         <li><a href="#" aria-label="О нас">О компании</a></li>
       </ul>
-      <!--Правильно??? -->
-      <ul class="main-header__user-navigation">
+      <ul class="user-navigation">
         <li class="user-navigation__search">
             <button class="user-navigation__button" type="button" aria-label="Поиск">Поиск</button>
-            <form class="" action="index.html" method="post">
+            <form class="user-navigation__search-form" action="index.html" method="post">
               <label class="visually_hidden" for="search">Поиск</label>
               <input type="search" id="search" name="search" value="search" aria-label="Поиск на сайте" placeholder="Что ищем?">
             </form>
@@ -56,13 +57,13 @@
           </section>
         </li>
         <li class="user-navigation__cart">
-          <button class="button" type="button" aria-label="Корзина">Корзина</button>
+          <button class="" type="button" aria-label="Корзина">Корзина</button>
         </li>
       </ul>
       <div class="main-header__contact">
         <p>
           С 10 до 20, ежедневно
-          <a href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
+          <a class="main-header__contact-phone" href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
         </p>
       </div>
     </nav>
@@ -84,19 +85,24 @@
         <b>Пломбир с помадкой и клубничный щербет</b>
         <a href="#" class="button" aria-label="Хочу оба!">Давайте оба!</a>
       </figure>
+      <ul class="gallery-slider">
+        <li class="gallery-slider-radio"><button class="gallery-slider-button">Первый слайд</button></li>
+        <li class="gallery-slider-radio"><button class="gallery-slider-button">Второй слайд</button></li>
+        <li class="gallery-slider-radio"><button class="gallery-slider-button">Третий слайд</button></li>
+      </ul>
     </div>
 
     <section class="container__banners">
-      <section class="banners__banner">
-          <h2>Малинка даром</h2>
+      <section class="container__banners__banner rawsberry">
+          <h2>Малинка даром!</h2>
           <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a href="#" class="button">Хочу варенье!</a>
+          <a class="button" href="#">Хочу варенье!</a>
       </section>
 
-      <section class="banners__banner">
+      <section class="container__banners__banner chocolate">
         <h2>Шоколадки даром!</h2>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <a href="#">Хочу шоколадки!</a>
+        <a class="button" href="#">Хочу шоколадки!</a>
       </section>
     </section>
 
@@ -149,11 +155,15 @@
     </article>
 
     <section class="container__subscription">
-      <form class="" action="index.html" method="post">
-        <label for="email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </label>
-        <input type="mail" name="" value="" id="email" placeholder="Электронная почта" aria-label="Введите электронную почту">
-        <button type="submit" name="button" aria-label="Отправить">Отправить</button>
-      </form>
+      <div class="subscription-form">
+        <form class="" action="index.html" method="post">
+          <label for="email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </label>
+          <p>
+            <input type="mail" name="" value="" id="email" placeholder="Электронная почта" aria-label="Введите электронную почту">
+            <button class="button" type="submit" name="button" aria-label="Отправить">Отправить</button>
+          </p>
+        </form>
+      </div>
     </section>
 
     <section class="container__location">
@@ -187,13 +197,13 @@
         <label class="visually_hidden" for="user-message">Напишите что-нибудь</label>
         <textarea id="user-message"name="message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
       </p>
-      <button type="submit" name="button" aria-label="Отправить">Отправить</button>
+      <button class="button" type="submit" name="button" aria-label="Отправить">Отправить</button>
     </form>
   </section>
 
   <footer class="main-footer">
     <div class="main-footer__social">
-      <ul>
+      <ul class="social-list">
         <li><a class="social-button twitter" href="#" aria-label="Твитер">Твитер</a></li>
         <li><a class="social-button instagram" href="#" aria-label="Инстаграм">Инстаграм</a></li>
         <li><a class="social-button facebook" href="#" aria-label="Фейсбук">Фейсбук</a></li>
@@ -201,15 +211,17 @@
       </ul>
     </div>
 
-    <ul class="main-footer__links">
+  <div class="main-footer__links">
+    <ul class="link-list">
       <li><a href="#" aria-label="Для поставщиков"><b>Для поставщиков</b></a></li>
       <li><a href="#" aria-label="Производство">О производстве</a></li>
       <li><a href="#" aria-label="Документы">Наши документы</a></li>
       <li><a href="#" aria-label="Экологические стандарты">Экологические стандарты</a></li>
     </ul>
+  </div>
 
     <p class="main-footer__copyright">
-      <a class="button" href="https://htmlacademy.ru" aria-label="HTML Академия">HTML Academy</a>
+      <a class="" href="https://htmlacademy.ru" aria-label="HTML Академия">HTML Academy</a>
       Сделано в HTML Academy 2017
     </p>
   </footer>

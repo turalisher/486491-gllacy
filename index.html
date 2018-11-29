@@ -16,7 +16,7 @@
       <ul class="site-navigation">
         <li><a class="drop-menu__root" href="#" aria-label="Каталог нашего мороженого">Каталог</a>
           <ul class="drop-menu">
-            <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого"><b>Новинки</b></a></li>
+            <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого"><strong>Новинки</strong></a></li>
             <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
             <li><a class="drop-menu__link" href="#" aria-label="Щербет">Щербеты</a></li>
             <li><a class="drop-menu__link" href="#" aria-label="Фруктовый лед">Фруктовый лед</a></li>
@@ -30,7 +30,7 @@
         <li class="user-navigation__search">
             <button class="user-navigation__button" type="button" aria-label="Поиск">Поиск</button>
             <form class="user-navigation__search-form" action="index.html" method="post">
-              <label class="visually_hidden" for="search">Поиск</label>
+              <label class="visually-hidden" for="search">Поиск</label>
               <input type="search" id="search" name="search" value="search" aria-label="Поиск на сайте" placeholder="Что ищем?">
             </form>
         </li>
@@ -70,7 +70,7 @@
   </header>
 
   <main class="container">
-    <h1 class="visually_hidden">Глейси Магазин</h1>
+    <h1 class="visually-hidden">Глейси Магазин</h1>
 
     <div class="container__gallery-slider">
       <figure>
@@ -86,9 +86,9 @@
         <a href="#" class="button" aria-label="Хочу оба!">Давайте оба!</a>
       </figure>
       <ul class="gallery-slider">
-        <li class="gallery-slider-radio"><button class="gallery-slider-button">Первый слайд</button></li>
-        <li class="gallery-slider-radio"><button class="gallery-slider-button">Второй слайд</button></li>
-        <li class="gallery-slider-radio"><button class="gallery-slider-button">Третий слайд</button></li>
+        <li class="gallery-slider-radio"><button class="gallery-slider-button"><span class="visually-hidden">Первый слайд</span></button></li>
+        <li class="gallery-slider-radio"><button class="gallery-slider-button"><span class="visually-hidden">Второй слайд</span></button></li>
+        <li class="gallery-slider-radio"><button class="gallery-slider-button"><span class="visually-hidden">Третий слайд</span></button></li>
       </ul>
     </div>
 
@@ -151,7 +151,7 @@
 
     <article class="container__blog">
       <h3>Новое в нашем блоге</h3>
-      <a href="#" aria-label="10 способов сервировки фруктовых щербетов к столу"><strong>10 способов сервировки фруктовых щербетов к столу</strong></a>
+      <a href="#" aria-label="10 способов сервировки фруктовых щербетов к столу">10 способов сервировки фруктовых щербетов к столу</a>
     </article>
 
     <section class="container__subscription">
@@ -169,11 +169,11 @@
     <section class="container__location">
       <!--Карта-->
       <section class="location__feedback">
-        <address class="">
+        <address class="location__feedback__adress">
           Адрес главного офиса и офлайн-магазина:
-          <a href="http://maps.google.com/?q=ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-label="Местонахождение">ул. Большая Конюшенная 19/8, Санкт-Петербург</a>
+          <a class="feedback__adress-contact" href="http://maps.google.com/?q=ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-label="Местонахождение">ул. Большая Конюшенная 19/8, Санкт-Петербург</a>
           <p>Для заказов по телефону:</p>
-          <a href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
+          <a class="feedback__adress-contact" href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
           <p>(с 10 до 20 ежедневно)</p>
         </address>
         <button class="button" type="button" name="button">Форма обратной связи</button>
@@ -186,15 +186,15 @@
     <h2>Мы обязательно Вам ответим!</h2>
     <form class="" action="index.html" method="post">
       <p>
-        <label class="visually_hidden" for="user-name">Как Вас зовут?</label>
+        <label class="visually-hidden" for="user-name">Как Вас зовут?</label>
         <input type="text" id="user-name" name="user-name" value="" placeholder="Как Вас зовут?">
       </p>
       <p>
-        <label class="visually_hidden" for="user-mail">Ваша почта для ответа?</label>
+        <label class="visually-hidden" for="user-mail">Ваша почта для ответа?</label>
         <input type="text" id="user-mail" name="user-mail" value="" placeholder="Ваша почта для ответа?">
       </p>
       <p>
-        <label class="visually_hidden" for="user-message">Напишите что-нибудь</label>
+        <label class="visually-hidden" for="user-message">Напишите что-нибудь</label>
         <textarea id="user-message" name="message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
       </p>
       <button class="button" type="submit" name="button" aria-label="Отправить">Отправить</button>
@@ -204,10 +204,10 @@
   <footer class="main-footer">
     <div class="main-footer__social">
       <ul class="social-list">
-        <li><a class="social-button twitter" href="#" aria-label="Твитер">Твитер</a></li>
-        <li><a class="social-button instagram" href="#" aria-label="Инстаграм">Инстаграм</a></li>
-        <li><a class="social-button facebook" href="#" aria-label="Фейсбук">Фейсбук</a></li>
-        <li><a class="social-button vk" href="#" aria-label="Вконтакте">Вконтакте</a></li>
+        <li><a class="social-button twitter" href="#" aria-label="Твитер"><span class="visually-hidden">Твитер</span></a></li>
+        <li><a class="social-button instagram" href="#" aria-label="Инстаграм"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li><a class="social-button facebook" href="#" aria-label="Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a class="social-button vk" href="#" aria-label="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
       </ul>
     </div>
 

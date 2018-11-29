@@ -14,9 +14,9 @@
       </a>
       <nav class="main-header__main-navigation">
         <ul class="site-navigation">
-          <li><a href="#" aria-label="Каталог нашего мороженого">Каталог</a>
+          <li><a class="drop-menu__root" href="#" aria-label="Каталог нашего мороженого">Каталог</a>
             <ul class="drop-menu">
-              <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого">Новинки</a></li>
+              <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого"><b>Новинки</b></a></li>
               <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
               <li><a class="drop-menu__link" href="#" aria-label="Щербет">Щербеты</a></li>
               <li><a class="drop-menu__link" href="#" aria-label="Фруктовый лед">Фруктовый лед</a></li>
@@ -26,43 +26,44 @@
           <li><a href="#" aria-label="Доставка и оплата">Доставка и оплата</a></li>
           <li><a href="#" aria-label="О нас">О компании</a></li>
         </ul>
-        <!--Правильно??? -->
-        <ul class="main-header__user-navigation">
+        <ul class="user-navigation">
           <li class="user-navigation__search">
               <button class="user-navigation__button" type="button" aria-label="Поиск">Поиск</button>
+              <form class="user-navigation__search-form" action="index.html" method="post">
+                <label class="visually_hidden" for="search">Поиск</label>
+                <input type="search" id="search" name="search" value="search" aria-label="Поиск на сайте" placeholder="Что ищем?">
+              </form>
           </li>
           <li class="user-navigation__profile">
             <button class="user-navigation__button" type="submit">Вход</button>
-          </li>
-          <li class="user-navigation__cart">
-            <button class="button" type="button" aria-label="Корзина">2 товара"</button>
-            <section class="cart__full">
-              <form class="" action="index.html" method="post">
-                <table>
-                  <tr>
-                    <td>Удалить</td>
-                    <td>Пломбир с апельсиновым джемом</td>
-                    <td>1,5 кг Х 200 руб.</td>
-                    <td>300 руб.</td>
-                  </tr>
-                  <tr>
-                    <td>Удалить</td>
-                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1,5 кг Х 300 руб.</td>
-                    <td>450 руб.</td>
-                  </tr>
-                </table>
-                <hr>
-                <p>Итого: 750 руб.</p>
-                <button type="submit" name="button" aria-label="Оформить заказ">Оформить заказ</button>
+            <section class="modal modal-login">
+              <form class="login-form" action="" method="post">
+                <p>
+                  <label for="user-login">Электронная почта</label>
+                  <input id="user-login" type="email" name="mail" placeholder="Электронная почта" aria-label="Электронная почта">
+                </p>
+                <p>
+                  <label for="user-password">Пароль</label>
+                  <input id="user-password" type="password" name="password" placeholder="Пароль" aria-label="Пароль">
+                </p>
+                <p class="login-password-info">
+                  <a href="#" aria-label="Забыли пароль">Забыли пароль?</a>
+                  <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
+                </p>
+                <button class="button" type="submit" aria-label="Войти в личный кабинет">
+                  Войти
+                </button>
               </form>
             </section>
+          </li>
+          <li class="user-navigation__cart">
+            <button class="" type="button" aria-label="Корзина">Корзина</button>
           </li>
         </ul>
         <div class="main-header__contact">
           <p>
             С 10 до 20, ежедневно
-            <a href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
+            <a class="main-header__contact-phone" href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
           </p>
         </div>
       </nav>
@@ -224,7 +225,7 @@
 
     <footer class="main-footer">
       <div class="main-footer__social">
-        <ul>
+        <ul class="social-list">
           <li><a class="social-button twitter" href="#" aria-label="Твитер">Твитер</a></li>
           <li><a class="social-button instagram" href="#" aria-label="Инстаграм">Инстаграм</a></li>
           <li><a class="social-button facebook" href="#" aria-label="Фейсбук">Фейсбук</a></li>
@@ -232,15 +233,17 @@
         </ul>
       </div>
 
-      <ul class="main-footer__links">
+    <div class="main-footer__links">
+      <ul class="link-list">
         <li><a href="#" aria-label="Для поставщиков"><b>Для поставщиков</b></a></li>
         <li><a href="#" aria-label="Производство">О производстве</a></li>
         <li><a href="#" aria-label="Документы">Наши документы</a></li>
         <li><a href="#" aria-label="Экологические стандарты">Экологические стандарты</a></li>
       </ul>
+    </div>
 
       <p class="main-footer__copyright">
-        <a class="button" href="https://htmlacademy.ru" aria-label="HTML Академия">HTML Academy</a>
+        <a class="" href="https://htmlacademy.ru" aria-label="HTML Академия">HTML Academy</a>
         Сделано в HTML Academy 2017
       </p>
     </footer>

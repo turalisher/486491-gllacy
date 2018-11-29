@@ -62,7 +62,33 @@ a:hover {
   box-shadow       : inset 0 2px 2px #942718;
 }
 
-/* ******************Header********************************************** */
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="text"]{
+  color: #323232;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+input[type="text"]:hover {
+  border           : 2px solid rgba(154, 154, 154, 0.52);
+  background-color : #ffffff;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+  background-color: #ffffff;
+}
+
+/* *****************Header********************************************** */
 
 .main-header__logo {
   text-decoration : none;
@@ -137,9 +163,9 @@ a:hover {
   line-height     : 24px;
 }
 
-/* ****************************Slider************************************* */
+/* ***************************Slider************************************* */
 
-/* *******************************Banners************************************ */
+/* ******************************Banners************************************ */
 
 .container__banners__banner h2 {
   color       : #ffffff;
@@ -155,19 +181,19 @@ a:hover {
   line-height : 22px;
 }
 
-.rawsberry{
-  background-color: #8c0106;
-  background-image: url("../img/raspberries_background.jpg");
+.rawsberry {
+  background-image : url("../img/raspberries_background.jpg");
+  background-color : #8c0106;
 }
 
 .chocolate {
-  background-color: #5c361d;
-  background-image: url("../img/chocolate_background.jpg");
+  background-image : url("../img/chocolate_background.jpg");
+  background-color : #5c361d;
 }
 
-/* ****************************Hits*************************************** */
+/* ***************************Hits*************************************** */
 
-/* ****************************Features********************************** */
+/* ***************************Features********************************** */
 
 .container__features {
   color            : #323232;
@@ -187,7 +213,7 @@ a:hover {
   line-height : 22px;
 }
 
-/* **************************Blog***************************************** */
+/* *************************Blog***************************************** */
 
 .container__blog {
   background-image : url("../img/strawberry_background.jpg");
@@ -209,7 +235,7 @@ a:hover {
   line-height     : 30px;
 }
 
-/* **************************Subscription********************************* */
+/* *************************Subscription********************************* */
 
 .container__subscription {
   padding           : 6px;
@@ -229,4 +255,4 @@ a:hover {
   line-height : 22px;
 }
 
-/* ******************************Footer************************************* */
+/* *****************************Footer************************************* */

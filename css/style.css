@@ -141,6 +141,11 @@ input[type="text"]:focus {
   background-color: #f8f7f4;
 }
 
+/**Убрать **/
+.modal{
+  display: none;
+}
+
 /* *****************Header********************************************** */
 .main-header__logo,
 .main-header__contact-phone,
@@ -254,12 +259,12 @@ input[type="text"]:focus {
 }
 
 .rawsberry {
-  background-image: url("../img/raspberries_background.jpg");
+  background-image: url("../img/raspberries_background.png");
   background-color: #8c0106;
 }
 
 .chocolate {
-  background-image: url("../img/chocolate_background.jpg");
+  background-image: url("../img/chocolate_background.png");
   background-color: #5c361d;
 }
 
@@ -350,3 +355,94 @@ input[type="text"]:focus {
 }
 
 /* *****************************Footer************************************* */
+
+
+/*********************************FLEX-BOX*************************************/
+*{
+  background: rgba(255,0,0,.3);
+}
+
+.container{
+  width: 1147px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-header .container{
+  padding-top: 9px;
+  display: flex;
+}
+
+.main-header__logo{
+  margin-right: 24px;
+}
+
+.site-navigation{
+  margin-right: 374px;
+}
+
+.user-navigation-wrapper{
+  margin: 0;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__contact-phone{
+  display: block;
+}
+/****banners****/
+.container__banners{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 37px;
+}
+
+.container__banners__banner{
+  width: 560px;
+  height: 229px;
+}
+
+/**********hits*****/
+.hits-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.list__ice-cream{
+  margin: 0;
+  padding: 0;
+  margin-right: 25px;
+}
+
+/***features***/
+.features-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+/**blog and subs ***/
+.container__blog__subscription-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.container__blog,
+.container__subscription {
+  width: 560px;
+  height: 220px;
+}
+
+/***map**/
+
+/**footer**/
+.main-footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

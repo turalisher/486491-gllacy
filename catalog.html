@@ -9,115 +9,131 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo">
-        <img src="img/svg/logo.svg" alt="Main logo" width="154" height="64">
-      </a>
-      <nav class="main-header__main-navigation">
-        <ul class="site-navigation">
-          <li><a class="drop-menu__root" href="#" aria-label="Каталог нашего мороженого">Каталог</a>
-            <ul class="drop-menu">
-              <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого"><strong>Новинки</strong></a></li>
-              <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
-              <li><a class="drop-menu__link" href="#" aria-label="Щербет">Щербеты</a></li>
-              <li><a class="drop-menu__link" href="#" aria-label="Фруктовый лед">Фруктовый лед</a></li>
-              <li><a class="drop-menu__link" href="#" aria-label="Мелорин">Мелорин</a></li>
-            </ul>
-          </li>
-          <li><a href="#" aria-label="Доставка и оплата">Доставка и оплата</a></li>
-          <li><a href="#" aria-label="О нас">О компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="user-navigation__search">
-              <button class="user-navigation__button" type="button" aria-label="Поиск">Поиск</button>
-              <form class="user-navigation__search-form" action="index.html" method="post">
-                <label class="visually-hidden" for="search">Поиск</label>
-                <input type="search" id="search" name="search" value="search" aria-label="Поиск на сайте" placeholder="Что ищем?">
-              </form>
-          </li>
-          <li class="user-navigation__profile">
-            <button class="user-navigation__button" type="submit">Вход</button>
-            <section class="modal modal-login">
-              <form class="login-form" action="" method="post">
-                <p>
-                  <label for="user-login">Электронная почта</label>
-                  <input id="user-login" type="email" name="mail" placeholder="Электронная почта" aria-label="Электронная почта">
-                </p>
-                <p>
-                  <label for="user-password">Пароль</label>
-                  <input id="user-password" type="password" name="password" placeholder="Пароль" aria-label="Пароль">
-                </p>
-                <p class="login-password-info">
-                  <a href="#" aria-label="Забыли пароль">Забыли пароль?</a>
-                  <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
-                </p>
-                <button class="button" type="submit" aria-label="Войти в личный кабинет">
-                  Войти
-                </button>
-              </form>
-            </section>
-          </li>
-          <li class="user-navigation__cart">
-            <button class="" type="button" aria-label="Корзина">Корзина</button>
-          </li>
-        </ul>
-        <div class="main-header__contact">
-          <p>
-            С 10 до 20, ежедневно
-            <a class="main-header__contact-phone" href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
-          </p>
+      <div class="container">
+        <div class="logo-site-navigation-wrapper">
+          <a class="main-header__logo">
+            <img src="img/svg/logo.svg" alt="Main logo" width="154" height="64">
+          </a>
+          <ul class="site-navigation">
+              <li><a class="drop-menu__root" href="#" aria-label="Каталог нашего мороженого">Каталог</a>
+                <ul class="drop-menu">
+                  <li><a class="drop-menu__link" href="#" aria-label="Новинки нашего мороженого"><strong>Новинки</strong></a></li>
+                  <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
+                  <li><a class="drop-menu__link" href="#" aria-label="Щербет">Щербеты</a></li>
+                  <li><a class="drop-menu__link" href="#" aria-label="Фруктовый лед">Фруктовый лед</a></li>
+                  <li><a class="drop-menu__link" href="#" aria-label="Мелорин">Мелорин</a></li>
+                </ul>
+              </li>
+              <li><a href="#" aria-label="Доставка и оплата">Доставка и оплата</a></li>
+              <li><a href="#" aria-label="О нас">О компании</a></li>
+          </ul>
         </div>
-      </nav>
+
+        <div class="user-navigation-wrapper">
+          <ul class="user-navigation">
+            <li class="user-navigation__search">
+                <button class="user-navigation__button" type="button" aria-label="Поиск">Поиск</button>
+                <form class="user-navigation__search-form" action="index.html" method="post">
+                  <label class="visually-hidden" for="search">Поиск</label>
+                  <input type="search" id="search" name="search" value="search" aria-label="Поиск на сайте" placeholder="Что ищем?">
+                </form>
+            </li>
+            <li class="user-navigation__profile">
+              <button class="user-navigation__button" type="submit">Вход</button>
+              <section class="modal modal-login">
+                <form class="login-form" action="" method="post">
+                  <p>
+                    <label for="user-login">Электронная почта</label>
+                    <input id="user-login" type="email" name="mail" placeholder="Электронная почта" aria-label="Электронная почта">
+                  </p>
+                  <p>
+                    <label for="user-password">Пароль</label>
+                    <input id="user-password" type="password" name="password" placeholder="Пароль" aria-label="Пароль">
+                  </p>
+                  <p class="login-password-info">
+                    <a href="#" aria-label="Забыли пароль">Забыли пароль?</a>
+                    <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
+                  </p>
+                  <button class="button" type="submit" aria-label="Войти в личный кабинет">
+                    Войти
+                  </button>
+                </form>
+              </section>
+            </li>
+            <li class="user-navigation__cart">
+              <button class="" type="button" aria-label="Корзина">Корзина</button>
+            </li>
+          </ul>
+          <div class="main-header__contact">
+            <p>
+              С 10 до 20, ежедневно
+              <a class="main-header__contact-phone" href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="container">
       <h1 class="visually-hidden">Глейси Магазин</h1>
 
-      <p class="containter__path">Главная/Каталог/Сливочное</p>
+      <p class="containter__path"><a href="index.html">Главная</a>/<a href="#">Каталог</a>/Сливочное</p>
       <h2 class="container__title">Сливочное мороженое</h2>
 
       <section class="container__filters">
-        <form class="" action="index.html" method="post">
-          <section class="filter">
-            <label for="sorting">Сортировка:</label>
-            <div class="filter__paramaters">
-              <select class="filter__sorting" id="sorting">
-                <option value="top">по популярности</option>
-                <option value="poor">сначала недорогие</option>
-                <option value="expensive">сначала дорогие</option>
-                <option value="fat">по жирности</option>
-                </select>
-            </div>
-          </<section>
+        <form class="filters" action="index.html" method="post">
+          <div class="filters-wrapper">
+            <section class="filter">
+              <label for="sorting">Сортировка:</label>
+              <div class="filter__paramaters">
+                <select class="filter__sorting" id="sorting">
+                  <option value="top">по популярности</option>
+                  <option value="poor">сначала недорогие</option>
+                  <option value="expensive">сначала дорогие</option>
+                  <option value="fat">по жирности</option>
+                  </select>
+              </div>
+            </<section>
+
+            <section class="filter">
+                  <label for="price">Цена 100 руб.-500 руб.</label>
+                  <div class="filter__paramaters">
+                    <input type="range" id="price">
+                  </div>
+            </section>
+
+            <section class="filter">
+                <label for="fat">Жирность:</label>
+                <div class="filter__paramaters">
+                  <input type="radio" name="fat" value="0" id="fat"><label for="nofat">0%</label>
+                  <input type="radio" name="fat" value="10" id="fat"><label for="10">до 10%</label>
+                  <input type="radio" name="fat" value="30" id="fat"><label for="30">до 30%</label>
+                  <input type="radio" name="fat" value="31" id="fat"><label for="fat">выше 30%</label>
+                </div>
+            </section>
+
+          </div>
+          <div class="filters-wrapper">
+            <section class="filter">
+              <label for="filter">Наполнители:</label>
+              <div class="filter__paramaters" id="filter">
+                <input type="checkbox" name="chocolate" value="chocolate" id="chocolate"><label for="chocolate">Шоколадные</label>
+                <input type="checkbox" name="sugar" value="sugar" id="sugar"><label for="sugar">Сахарные присыпки</label>
+                <input type="checkbox" name="fruits" value="fruits" id="fruits"><label for="fruits">Фрукты</label>
+                <input type="checkbox" name="syrops" value="syrops" id="syrops"><label for="syrops">Сиропы</label>
+                <input type="checkbox" name="jems" value="jems" id="jems"><label for="jems">Джемы</label>
+              </div>
+            </section>
+            <input type="submit" name="" value="Применить">
+          </div>
+
         </form>
 
-          <section class="filter">
-              <label for="price">Цена 100 руб.-500 руб.</label>
-              <div class="filter__paramaters">
-                <input type="range" id="price">
-              </div>
-          </section>
 
-          <section class="filter">
-              <label for="fat">Жирность:</label>
-              <div class="filter__paramaters">
-                <input type="radio" name="fat" value="0" id="fat"><label for="nofat">0%</label>
-                <input type="radio" name="fat" value="10" id="fat"><label for="10">до 10%</label>
-                <input type="radio" name="fat" value="30" id="fat"><label for="30">до 30%</label>
-                <input type="radio" name="fat" value="31" id="fat"><label for="fat">выше 30%</label>
-              </div>
-          </section>
 
-          <section class="filter">
-            <label for="filter">Наполнители:</label>
-            <div class="filter__paramaters" id="filter">
-              <input type="checkbox" name="chocolate" value="chocolate" id="chocolate"><label for="chocolate">Шоколадные</label>
-              <input type="checkbox" name="sugar" value="sugar" id="sugar"><label for="sugar">Сахарные присыпки</label>
-              <input type="checkbox" name="fruits" value="fruits" id="fruits"><label for="fruits">Фрукты</label>
-              <input type="checkbox" name="syrops" value="syrops" id="syrops"><label for="syrops">Сиропы</label>
-              <input type="checkbox" name="jems" value="jems" id="jems"><label for="jems">Джемы</label>
-            </div>
-          </section>
-          <input type="submit" name="" value="Применить">
+
+
+
         </form>
       </section>
 
@@ -218,34 +234,33 @@
           <a href="#" class="pagination__link"> > </a>
         </div>
       </section>
-
-
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__social">
-        <ul class="social-list">
-          <li><a class="social-button twitter" href="#" aria-label="Твитер"><span class="visually-hidden">Твитер</span></a></li>
-          <li><a class="social-button instagram" href="#" aria-label="Инстаграм"><span class="visually-hidden">Инстаграм</span></a></li>
-          <li><a class="social-button facebook" href="#" aria-label="Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li><a class="social-button vk" href="#" aria-label="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
+      <div class="container">
+        <div class="main-footer__social">
+          <ul class="social-list">
+            <li><a class="social-button twitter" href="#" aria-label="Твитер"><span class="visually-hidden">Твитер</span></a></li>
+            <li><a class="social-button instagram" href="#" aria-label="Инстаграм"><span class="visually-hidden">Инстаграм</span></a></li>
+            <li><a class="social-button facebook" href="#" aria-label="Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-button vk" href="#" aria-label="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
+          </ul>
+        </div>
+
+      <div class="main-footer__links">
+        <ul class="link-list">
+          <li><a href="#" aria-label="Для поставщиков"><b>Для поставщиков</b></a></li>
+          <li><a href="#" aria-label="Производство">О производстве</a></li>
+          <li><a href="#" aria-label="Документы">Наши документы</a></li>
+          <li><a href="#" aria-label="Экологические стандарты">Экологические стандарты</a></li>
         </ul>
       </div>
 
-    <div class="main-footer__links">
-      <ul class="link-list">
-        <li><a href="#" aria-label="Для поставщиков"><b>Для поставщиков</b></a></li>
-        <li><a href="#" aria-label="Производство">О производстве</a></li>
-        <li><a href="#" aria-label="Документы">Наши документы</a></li>
-        <li><a href="#" aria-label="Экологические стандарты">Экологические стандарты</a></li>
-      </ul>
-    </div>
-
-      <p class="main-footer__copyright">
-        <a class="" href="https://htmlacademy.ru" aria-label="HTML Академия">HTML Academy</a>
-        Сделано в HTML Academy 2017
-      </p>
+        <p class="main-footer__copyright">
+          <a class="" href="https://htmlacademy.ru" aria-label="HTML Академия">HTML Academy</a>
+          Сделано в HTML Academy 2017
+        </p>
+      </div>
     </footer>
-
   </body>
 </html>

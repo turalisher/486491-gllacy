@@ -311,7 +311,9 @@ input[type="text"]:focus {
   height: 21px;
   position: relative;
   border-radius: 50%;
+  cursor: pointer;
 }
+
 
 .search::after {
   content: "";
@@ -319,6 +321,10 @@ input[type="text"]:focus {
   width: 17px;
   height: 17px;
   background-image: url("../img/svg/loupe.svg");
+}
+
+.search:hover::after{
+  background-image: url("../img/svg/loupe-hover.svg");
 }
 
 
@@ -344,6 +350,7 @@ input[type="text"]:focus {
 }
 .login{
   padding-right: 17px;
+  cursor: pointer;
 }
 
 .login::before{
@@ -352,12 +359,17 @@ input[type="text"]:focus {
   width: 21px;
   height: 19px;
   right: 7px;
-  background-image: url("../img/svg/entrance.svg");
+  background-image: url("../img/svg/entrance-hover.svg");
   margin-left: 16px;
+}
+
+.login:hover::before{
+  background-image: url("../img/svg/entrance.svg");
 }
 
 .cart{
   padding-right: 17px;
+  cursor: pointer;
 }
 
 .cart::before{
@@ -368,7 +380,11 @@ input[type="text"]:focus {
   right: 8px;
   background-image: url("../img/svg/basket.svg");
   margin-left: 16px;
+}
 
+.cart:hover::before{
+  cursor: pointer;
+    background-image: url("../img/svg/basket-hover.svg");
 }
 
 .modal-login {
@@ -379,10 +395,14 @@ input[type="text"]:focus {
   display: flex;
   justify-content: flex-end;
 }
-.main-header__contact p {
+.main-header__contact {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
+}
+
+.contact{
+  margin: 0;
 }
 
 .main-header__contact-phone {
@@ -505,55 +525,55 @@ input[type="text"]:focus {
   background-color: #ffffff;
 }
 
-/*
-
-.gallery-slider-radio {
-  display: inline-block;
-}
-
-.gallery-slider-button {
-  border-radius: 50%;
-  width: 21px;
-  height: 21px;
-  background-color: #ffffff;
-}
-
-.gallery-slider-button:hover {
-  width: 19px;
-  height: 19px;
-  background-color: #f8f7f4;
-  opacity: 0.4;
-}
-
-.gallery-slider-button:active {
-  width: 21px;
-  height: 21px;
-  background-color: #ffffff;
-}
-*/
 /* ******************************Banners************************************ */
-.container__banners__banner h2 {
-  color: #ffffff;
+.container__banners{
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__banners__banner{
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+
+  border-radius: 15px;
+}
+
+
+.banner-title {
+  margin: 16px 0;
+
   font-size: 35px;
-  font-weight: 700;
   line-height: 41px;
 }
 
-.container__banners__banner p {
-  color: #ffffff;
+.banner-text {
+  margin: 0;
+  margin-top: -2px;
+  margin-bottom: 18px;
+
   font-size: 18px;
-  font-weight: 700;
   line-height: 22px;
 }
 
 .rawsberry {
-  background-image: url("../img/raspberries_background.png");
   background-color: #8c0106;
+  background-image: url("../img/raspberries_background.png");
 }
 
 .chocolate {
-  background-image: url("../img/chocolate_background.png");
   background-color: #5c361d;
+  background-image: url("../img/chocolate_background.png");
+}
+
+.sale{
+  align-self: flex-end;
+  width: 165px;
+  margin-top: 26px;
+  margin-right: 1px;
 }
 
 /* ***************************Hits*************************************** */
@@ -735,10 +755,17 @@ input[type="text"]:focus {
   box-sizing: border-box;
 }
 
+.link-list li:nth-child(1){
+  position: relative;
+}
+
 .link-list li:nth-child(1)::before{
   content: "";
 
   position: absolute;
+  left: -18px;
+  top: 5px;
+  right: 33px;
   width: 15px;
   height: 13px;
 
@@ -934,5 +961,4 @@ input[type="text"]:focus {
 
 .filters-wrapper{
   display: flex;
-
 }

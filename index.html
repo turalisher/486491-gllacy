@@ -8,6 +8,9 @@
   <title>HTML Academy: Глейси</title>
 </head>
 <body>
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
   <header class="main-header">
     <div class="container">
       <nav class="main-navigation">
@@ -72,7 +75,7 @@
           </ul>
 
           <div class="user-navigation__contact">
-              <p>
+              <p class="contact">
                 С 10 до 20, ежедневно
                 <a class="main-header__contact-phone" href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
               </p>
@@ -87,9 +90,9 @@
 
     <div class="container__gallery-slider">
       <div class="gallery-slider-controls">
-        <label for="product-1">Первый</label>
-        <label for="product-2">Второй</label>
-        <label for="product-3">Третий</label>
+        <label for="product-1"><span class="visually-hidden">Первый</span></label>
+        <label for="product-2"><span class="visually-hidden">Второй</span></label>
+        <label for="product-3"><span class="visually-hidden">Третьи</span></label>
       </div>
 
       <ul class="gallery-slider-list">
@@ -114,21 +117,19 @@
       </ul>
 
     </div>
-    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
 
     <section class="container__banners">
+      <h2 class="visually-hidden">Акции</h2>
       <section class="container__banners__banner rawsberry">
-          <h2>Малинка даром!</h2>
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a class="button" href="#">Хочу варенье!</a>
+          <h3 class="banner-title">Малинка даром!</h3>
+          <p class="banner-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="button sale" href="#">Хочу варенье!</a>
       </section>
 
       <section class="container__banners__banner chocolate">
-        <h2>Шоколадки даром!</h2>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <a class="button" href="#">Хочу шоколадки!</a>
+        <h3 class="banner-title">Шоколадки даром!</h3>
+        <p class="banner-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+        <a class="button sale" href="#">Хочу шоколадки!</a>
       </section>
     </section>
 

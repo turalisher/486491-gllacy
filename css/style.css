@@ -712,9 +712,7 @@ input[type="text"]:focus {
 .instagram:active {
   opacity: .7;
 }
-*{
-  background-color: rgba(128,0,0,.3)
-}
+
 .link-list{
   margin: 0;
   padding: 0 auto;
@@ -739,10 +737,13 @@ input[type="text"]:focus {
 
 .link-list li:nth-child(1)::before{
   content: "";
-  position: relative;
+
+  position: absolute;
+  width: 15px;
+  height: 13px;
+
   background-image: url("../img/svg/heart.svg");
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .link-list li:nth-child(2){
@@ -751,6 +752,17 @@ input[type="text"]:focus {
 
 .link-list li:nth-child(4){
   order: 2;
+}
+
+.main-footer__copyright img{
+  display: block;
+  margin-bottom: 8px;
+}
+.main-footer__copyright{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #fefefe;
 }
 
 /********************************Catalog**************************************/

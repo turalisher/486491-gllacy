@@ -618,15 +618,60 @@ input[type="text"]:focus {
 }
 
 /* *************************Subscription********************************* */
-.container__subscription {
-  padding: 6px;
-  background-image: url("../img/postal_background.png");
+.container__blog__subscription-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+
+.container__blog{
+  width: 540px;
+  min-height: 217px;
+  padding-top: 5px;
+  padding-left: 20px;
+
   background-color: #ffffff;
-  background-repeat: round;
+  background-image: url("../img/strawsberry_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.blog-title {
+  margin-top: 17px;
+  margin-bottom: 4px;
+
+  font: inherit;
+  font-weight: 500;
+  color: #323232;
+}
+
+.blog-link{
+  display: block;
+  max-width: 286px;
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+
+.container__subscription {
+  width: 560px;
+  min-height: 222px;
+  background: url("../img/postal_background.png") no-repeat;
 }
 
 .subscription-form {
+  width: 507px;
+  min-height: 184px;
+  margin-top: 4px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-left: 6px;
+  padding: 13px 21px;
+
   background-color: #f8f7f4;
+  border-radius: 10px;
 }
 
 .subscription-form label {
@@ -634,6 +679,32 @@ input[type="text"]:focus {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+
+}
+
+.subscription-form input[type="email"] {
+  box-sizing: border-box;
+  width: 368px;
+  height: 44px;
+  margin-top: 20px;
+  padding: 13px 14px;
+
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
+
+.subscription-form input[type="email"]:hover{
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.subscription-form input[type="email"]:focus{
+  outline: 0;
+  border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.sub-btn {
+  width: 126px;
+
 }
 
 /******************************Location&Feedback******************************/

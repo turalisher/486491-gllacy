@@ -668,10 +668,18 @@ input[type="text"]:focus {
   margin-right: 5px;
   margin-bottom: 5px;
   margin-left: 6px;
-  padding: 13px 21px;
 
   background-color: #f8f7f4;
   border-radius: 10px;
+}
+
+.subscription-form form{
+  box-sizing: border-box;
+  padding-top: 34px;
+  padding-left: 21px;
+  padding-right: 22px;
+  width: 549px;
+  height: 210px;
 }
 
 .subscription-form label {
@@ -679,7 +687,6 @@ input[type="text"]:focus {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-
 }
 
 .subscription-form input[type="email"] {
@@ -704,8 +711,119 @@ input[type="text"]:focus {
 
 .sub-btn {
   width: 126px;
+}
+
+/******************************features****************************************/
+.container__features{
+  margin-bottom: 40px;
+  padding-top: 30px;
+  padding-right: 34px;
+  padding-left: 21px;
+  padding-bottom: 30px;
+  max-height: 306px;
+
+  border-radius: 15px;
+}
+
+.features-list{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 50px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.features-list p{
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+  margin-left: 7px;
+}
+
+.features-list > li{
+  flex: 0 50%;
+  box-sizing: border-box;
+  max-width: 480px;
+}
+
+.features-list li:nth-child(2){
+  order: 1;
+}
+
+.features-list li:nth-child(4){
+  order: 2;
+}
+
+.features-title{
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.technology::before{
+  content: "";
+
+  position: absolute;
+  margin-left: -50px;
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/svg/ice-cream.svg");
+  background-repeat: no-repeat;
+  width: 49px;
+  height: 49px;
+  }
+
+.cow::before{
+  content: "";
+
+  position: absolute;
+  margin-left: -50px;
+
+  display: block;
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/svg/cow.svg");
 
 }
+
+.bio::before{
+  content: "";
+
+  position: absolute;
+  margin-left: -50px;
+
+  display: block;
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/svg/eco.svg");
+}
+
+.delievery::before{
+  content: "";
+
+  position: absolute;
+  margin-left: -50px;
+
+  display: block;
+  width: 49px;
+  height: 49px;
+
+  background-image: url("../img/svg/thermometer.svg");
+}
+
+
 
 /******************************Location&Feedback******************************/
 .location__feedback {
@@ -945,29 +1063,7 @@ input[type="text"]:focus {
 }
 
 /***features***/
-.container__features{
-  margin-bottom: 40px;
-}
-.features-list{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.features-list > li{
-  flex: 0 50%;
-  box-sizing:border-box;
-}
-
-.features-list li:nth-child(2){
-  order: 1;
-}
-
-.features-list li:nth-child(4){
-  order: 2;
-}
 
 
 

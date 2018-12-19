@@ -577,6 +577,55 @@ input[type="text"]:focus {
 }
 
 /* ***************************Hits*************************************** */
+.list__ice-cream{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.container .list__ice-cream::before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  z-index: 22;
+  width: 61px;
+  height: 61px;
+
+  background-image: url("../img/svg/hit.svg");
+  background-repeat: no-repeat;
+}
+
+.ice-cream__cost{
+  position: absolute;
+  bottom: 25px;
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.ruble,
+.wt {
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.ruble{
+  /* Text style for "₽" */
+  font-size: 45px;
+}
+
+.list__ice-cream figcaption{
+  margin-top: 17px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
 /* ***************************Features********************************** */
 .container__features {
   color: #323232;

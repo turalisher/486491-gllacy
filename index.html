@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Глейси</title>
 </head>
 <body>
@@ -29,7 +29,7 @@
                   </ul>
                 </li>
                 <li><a href="#" aria-label="Доставка и оплата">Доставка и оплата</a></li>
-                <li><a href="#" aria-label="О нас">О компании</a></li>
+                <li><a href="#" aria-label="О нас">О Компании</a></li>
             </ul>
           </div>
           <div class="user-navigation-wrapper">
@@ -40,7 +40,7 @@
                 </a>
                 <form class="user-navigation__search-form" action="index.html" method="post">
                   <label class="visually-hidden" for="search">Поиск</label>
-                  <input type="search" id="search" name="search" value="search" aria-label="Поиск на сайте" placeholder="Что ищем?">
+                  <input type="search" id="search" name="search"  aria-label="Поиск на сайте" placeholder="Что ищем?">
                 </form>
               </li>
               <li class="user-navigation__profile">
@@ -77,8 +77,8 @@
             <div class="user-navigation__contact">
                 <p class="contact">
                   С 10 до 20, ежедневно
-                  <a class="main-header__contact-phone" href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
                 </p>
+                <a class="main-header__contact-phone" href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
             </div>
           </div>
         </nav>
@@ -134,32 +134,36 @@
 
       <section class="container__hits">
         <ul class="hits-list">
-        <li>
+        <li class="list-item">
             <figure class="list__ice-cream">
-              <img src="img/ice_creams/Creamy-with-orange-jam-and-citrus-chips.png" alt="Creamy with orange jam and citrus chips" width="267" height="267">
-              <p class="ice-cream__cost">310 <span class="ruble">&#8381;</span><span class="wt">/kg</span></p>
-              <figcaption><a class="ice-cream__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
+                <img src="img/ice_creams/Creamy-with-orange-jam-and-citrus-chips.png" alt="Creamy with orange jam and citrus chips" width="267" height="267">
+                <p class="ice-cream__cost">310 <span class="ruble"> &#8381;</span><span class="wt">/kg</span></p>
+                <figcaption><a class="ice-cream__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
+                <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
             </figure>
           </li>
-          <li>
+          <li class="list-item">
             <figure class="list__ice-cream">
               <img src="img/ice_creams/Creamy-coffee-with-chocolate-pieces.png" alt="Creamy coffee with chocolate pieces" width="267" height="267">
               <p class="ice-cream__cost">380 <span class="ruble">&#8381;</span><span class="wt">/kg</span></p>
               <figcaption><a class="ice-cream__link" href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
+              <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
             </figure>
           </li>
-          <li>
+          <li class="list-item">
             <figure class="list__ice-cream">
               <img src="img/ice_creams/Creamy-strawberry-with-white-chocolate-sprinkles.png" alt="Creamy strawberry with white chocolate sprinkles" width="267" height="267">
               <p class="ice-cream__cost">355 <span class="ruble">&#8381;</span><span class="wt">/kg</span></p>
               <figcaption><a class="ice-cream__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
+              <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
             </figure>
           </li>
-          <li>
+          <li class="list-item">
             <figure class="list__ice-cream">
               <img src="img/ice_creams/Creamy-creme-brulee-with-caramel-sauce.png" alt="Creamy creme brulee with caramel sauce" width="267" height="267">
               <p class="ice-cream__cost">415 <span class="ruble">&#8381;</span><span class="wt">/kg</span></p>
               <figcaption><a href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
+              <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
             </figure>
           </li>
         </ul>
@@ -183,11 +187,11 @@
 
         <section class="container__subscription">
             <form class="subscription-form" action="index.html" method="post">
-              <label for="email">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </label>
-              <p>
-                <input type="email" name="" value="" id="email" placeholder="Электронная почта" aria-label="Введите электронную почту">
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+              <div class="wrapper">
+                <input type="email" name="" value="" placeholder="Электронная почта" aria-label="Введите электронную почту">
                 <button class="button sub-btn" type="submit" name="button" aria-label="Отправить">Отправить</button>
-              </p>
+              </div>
             </form>
         </section>
       </div>
@@ -198,16 +202,18 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123647!2d30.32089461566686!3d59.938796869048474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1471164580128" allowfullscreen=""></iframe>
             <section class="location__feedback">
               <address class="location__feedback__adress">
-                Адрес главного офиса и офлайн-магазина:
-                <a class="feedback__adress-contact" href="http://maps.google.com/?q=ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-label="Местонахождение">ул. Большая Конюшенная 19/8, Санкт-Петербург</a>
-                <p>Для заказов по телефону:</p>
-                <a class="feedback__adress-contact" href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
-                <p>(с 10 до 20 ежедневно)</p>
+                <p class="address">Адрес главного офиса и офлайн-магазина:</p>
+                <a class="location-link"href="http://maps.google.com/?q=ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-label="Местонахождение">ул. Большая Конюшенная 19/8, Санкт-Петербург</a>
+
+                <p class="address-phone">
+                  Для заказов по телефону:
+                  <span class="phone-contact"><a href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a></span>
+                  (с 10 до 20 ежедневно)
+                </p>
               </address>
-              <button class="button" type="button" name="button">Форма обратной связи</button>
+              <button class="button btn-feedback" type="button" name="button">Форма обратной связи</button>
             </section>
           </div>
-
         </section>
         <section class="modal modal-feedback">
           <h2>Мы обязательно Вам ответим!</h2>
@@ -228,8 +234,6 @@
           </form>
         </section>
       </div>
-
-
 
     </main>
 

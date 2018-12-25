@@ -16,7 +16,7 @@
                 <img src="img/svg/logo.svg" alt="Main logo" width="154" height="64">
               </a>
               <ul class="site-navigation">
-                  <li><a class="drop-menu__root" href="#" aria-label="Каталог нашего мороженого">Каталог</a>
+                  <li><a class="drop-menu__root" aria-label="Каталог нашего мороженого">Каталог</a>
                     <ul class="drop-menu">
                       <li><a class="new" href="#" aria-label="Новинки нашего мороженого"><strong>Новинки</strong></a></li>
                       <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
@@ -26,7 +26,7 @@
                     </ul>
                   </li>
                   <li><a href="#" aria-label="Доставка и оплата">Доставка и оплата</a></li>
-                  <li><a href="#" aria-label="О нас">О компании</a></li>
+                  <li><a href="#" aria-label="О нас">О Компании</a></li>
               </ul>
             </div>
             <div class="user-navigation-wrapper">
@@ -37,14 +37,14 @@
                   </a>
                   <form class="user-navigation__search-form" action="index.html" method="post">
                     <label class="visually-hidden" for="search">Поиск</label>
-                    <input type="search" id="search" name="search" value="search" aria-label="Поиск на сайте" placeholder="Что ищем?">
+                    <input type="search" id="search" name="search"  aria-label="Поиск на сайте" placeholder="Что ищем?">
                   </form>
                 </li>
                 <li class="user-navigation__profile">
                   <a class="user-navigation__button login">
                     Вход
                   </a>
-                  <section class="modal modal-login">
+                  <section class="modal user-navigation__login-form">
                     <form class="login-form" action="action.php" method="post">
                       <p>
                         <label for="user-login">Электронная почта</label>
@@ -74,8 +74,8 @@
               <div class="user-navigation__contact">
                   <p class="contact">
                     С 10 до 20, ежедневно
-                    <a class="main-header__contact-phone" href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
                   </p>
+                  <a class="main-header__contact-phone" href="tel:8812450-25-25" aria-label="Наш телефон">8 812 450-25-25</a>
               </div>
             </div>
           </nav>
@@ -87,7 +87,7 @@
         <h2 class="container__title">Сливочное мороженое</h2>
 
         <section class="container__filters">
-          <form class="filters" action="index.html" method="post">
+          <form class="filters" action="action.php" method="get">
             <div class="filters-wrapper">
               <section class="filter">
                 <label for="sorting">Сортировка:</label>
@@ -108,7 +108,7 @@
                     </div>
               </section>
 
-              <section class="filter">
+              <section class="filter filter-fat">
                   <label for="fat">Жирность:</label>
                   <div class="filter__paramaters">
                     <input type="radio" name="fat" value="0" id="nofat"><label for="nofat">0%</label>
@@ -137,7 +137,7 @@
         <section class="container__content">
           <div class="container__ice-creams">
             <ul class="content__list">
-              <li>
+              <li class="list-item">
                 <figure class="list__ice-cream">
                   <img src="img/ice_creams/Creamy-with-orange-jam-and-citrus-chips.png" alt="Creamy with orange jam and citrus chips" width="267" height="267">
                   <p class="ice-cream__cost">310 <span class="ruble">&#8381;</span><span class="wt">/kg</span></p>
@@ -252,7 +252,6 @@
                   <img src="img/ice_creams/Creamy-Mint-Syrup.png" alt="Creamy Mint Syrup" width="267" height="267">
                   <p class="ice-cream__cost">420 <span class="ruble">&#8381;</span><span class="wt">/kg</span></p>
                   <figcaption><a class="ice-cream__link" href="#">Сливочное с мятным сиропом</a></figcaption>
-
                 </figure>
                 <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
               </li>

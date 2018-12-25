@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Глейси</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
               <img src="img/svg/logo.svg" alt="Main logo" width="154" height="64">
             </a>
             <ul class="site-navigation">
-                <li><a class="drop-menu__root" href="#" aria-label="Каталог нашего мороженого">Каталог</a>
+                <li><a href="#" aria-label="Каталог нашего мороженого">Каталог</a>
                   <ul class="drop-menu">
                     <li><a class="new" href="#" aria-label="Новинки нашего мороженого"><strong>Новинки</strong></a></li>
                     <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
@@ -47,23 +47,25 @@
                 <a class="user-navigation__button login">
                   Вход
                 </a>
-                <section class="modal user-navigation__login-form">
+                <section class="user-navigation__login-form">
                   <form class="login-form" action="action.php" method="post">
-                    <p>
-                      <label for="user-login">Электронная почта</label>
+                    <div class="login-form-wrapper">
+                      <label class="visually-hidden" for="user-login">Электронная почта</label>
                       <input id="user-login" type="email" name="mail" placeholder="Электронная почта" aria-label="Электронная почта">
-                    </p>
-                    <p>
-                      <label for="user-password">Пароль</label>
+                    </div>
+                    <div class="login-form-wrapper">
+                      <label class="visually-hidden" for="user-password">Пароль</label>
                       <input id="user-password" type="password" name="password" placeholder="Пароль" aria-label="Пароль">
-                    </p>
-                    <p class="login-password-info">
-                      <a href="#" aria-label="Забыли пароль">Забыли пароль?</a>
-                      <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
-                    </p>
-                    <button class="button" type="submit" aria-label="Войти в личный кабинет">
-                      Войти
-                    </button>
+                    </div>
+                    <div class="login-form-wrapper entry">
+                      <button class="button" type="submit" aria-label="Войти в личный кабинет">
+                        Войти
+                      </button>
+                      <p class="login-password-info">
+                        <a href="#" aria-label="Забыли пароль">Забыли пароль?</a>
+                        <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
+                      </p>
+                    </div>
                   </form>
                 </section>
               </li>
@@ -139,16 +141,15 @@
                 <img src="img/ice_creams/Creamy-with-orange-jam-and-citrus-chips.png" alt="Creamy with orange jam and citrus chips" width="267" height="267">
                 <p class="ice-cream__cost">310 <span class="ruble"> &#8381;</span><span class="wt">/kg</span></p>
                 <figcaption><a class="ice-cream__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
-
             </figure>
             <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+
           </li>
           <li class="list-item">
             <figure class="list__ice-cream">
               <img src="img/ice_creams/Creamy-coffee-with-chocolate-pieces.png" alt="Creamy coffee with chocolate pieces" width="267" height="267">
               <p class="ice-cream__cost">380 <span class="ruble">&#8381;</span><span class="wt">/kg</span></p>
               <figcaption><a class="ice-cream__link" href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
-
             </figure>
             <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
           </li>

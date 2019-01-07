@@ -124,13 +124,13 @@
         <section class="container__banners__banner rawsberry">
             <h3 class="banner-title">Малинка даром!</h3>
             <p class="banner-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="button sale" href="#">Хочу варенье!</a>
+            <a class="button sale-btn" href="#">Хочу варенье!</a>
         </section>
 
         <section class="container__banners__banner chocolate">
           <h3 class="banner-title">Шоколадки даром!</h3>
           <p class="banner-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a class="button sale" href="#">Хочу шоколадки!</a>
+          <a class="button sale-btn" href="#">Хочу шоколадки!</a>
         </section>
       </section>
 
@@ -139,7 +139,7 @@
         <li class="list-item">
             <figure class="list__ice-cream">
                 <img src="img/ice_creams/Creamy-with-orange-jam-and-citrus-chips.png" alt="Creamy with orange jam and citrus chips" width="267" height="267">
-                <p class="ice-cream__cost">310 <span class="ruble"> &#8381;</span><span class="wt">/kg</span></p>
+                <p class="ice-cream__cost">310 <span class="ruble"> &#8381;</span><span class="wt">/кг</span></p>
                 <figcaption><a class="ice-cream__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
             </figure>
             <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
@@ -148,7 +148,7 @@
           <li class="list-item">
             <figure class="list__ice-cream">
               <img src="img/ice_creams/Creamy-coffee-with-chocolate-pieces.png" alt="Creamy coffee with chocolate pieces" width="267" height="267">
-              <p class="ice-cream__cost">380 <span class="ruble">&#8381;</span><span class="wt">/kg</span></p>
+              <p class="ice-cream__cost">380 <span class="ruble">&#8381;</span><span class="wt">/кг</span></p>
               <figcaption><a class="ice-cream__link" href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
             </figure>
             <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
@@ -156,7 +156,7 @@
           <li class="list-item">
             <figure class="list__ice-cream">
               <img src="img/ice_creams/Creamy-strawberry-with-white-chocolate-sprinkles.png" alt="Creamy strawberry with white chocolate sprinkles" width="267" height="267">
-              <p class="ice-cream__cost">355 <span class="ruble">&#8381;</span><span class="wt">/kg</span></p>
+              <p class="ice-cream__cost">355 <span class="ruble">&#8381;</span><span class="wt">/кг</span></p>
               <figcaption><a class="ice-cream__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
 
             </figure>
@@ -165,7 +165,7 @@
           <li class="list-item">
             <figure class="list__ice-cream">
               <img src="img/ice_creams/Creamy-creme-brulee-with-caramel-sauce.png" alt="Creamy creme brulee with caramel sauce" width="267" height="267">
-              <p class="ice-cream__cost">415 <span class="ruble">&#8381;</span><span class="wt">/kg</span></p>
+              <p class="ice-cream__cost">415 <span class="ruble">&#8381;</span><span class="wt">/кг</span></p>
               <figcaption><a href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
 
             </figure>
@@ -222,7 +222,8 @@
         </section>
         <section class="modal modal-feedback">
           <h2>Мы обязательно Вам ответим!</h2>
-          <form class="" action="index.html" method="post">
+          <button class="modal-close btn" type="button"><span class="visually-hidden">Закрыть</span></button>
+          <form class="feedback-form" action="index.html" method="post">
             <p>
               <label class="visually-hidden" for="user-name">Как Вас зовут?</label>
               <input type="text" id="user-name" name="user-name" value="" placeholder="Как Вас зовут?">
@@ -233,9 +234,9 @@
             </p>
             <p>
               <label class="visually-hidden" for="user-message">Напишите что-нибудь</label>
-              <textarea id="user-message" name="message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+              <textarea id="user-message" name="user-message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
             </p>
-            <button class="button" type="submit" name="button" aria-label="Отправить">Отправить</button>
+            <button class="button modal-feedback-button" type="submit" name="button" aria-label="Отправить">Отправить</button>
           </form>
         </section>
       </div>
@@ -280,6 +281,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

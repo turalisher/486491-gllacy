@@ -340,7 +340,6 @@ input[type="text"]:focus {
 }
 
 .user-navigation {
-  display: flex;
   position: relative;
   margin: 0;
   padding: 0;
@@ -391,8 +390,10 @@ input[type="text"]:focus {
   cursor: pointer;
 }
 
-.user-navigation>li:hover .user-navigation__login-form,
-.user-navigation>li:hover .user-navigation__search-form {
+.user-navigation >li:hover .user-navigation__login-form,
+.user-navigation >li:hover .user-navigation__search-form,
+.user-navigation >li:hover .user-navigation__basket-list
+ {
   display: block;
 }
 
@@ -422,7 +423,7 @@ input[type="text"]:focus {
   position: absolute;
   display: none;
   right: 0;
-  top: 4px;
+  top: 40px;
   z-index: 22;
   width: 341px;
   min-height: 84px;
@@ -590,6 +591,94 @@ input[type="text"]:focus {
 .cart:hover::before {
   cursor: pointer;
   background-image: url("../img/svg/basket-hover.svg");
+}
+
+.user-navigation__basket-list{
+  position: absolute;
+  top: 53px;
+  right: 0;
+  z-index: 5;
+
+  display: none;
+
+  width: 502px;
+  min-height: 216px;
+  padding: 20px 18px 0px;
+
+background-color: #f8f7f4;
+border-radius: 5px;
+-webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+
+}
+
+.basket-list-table + hr{
+  margin-bottom: 10px;
+}
+
+.user-navigation__basket-list p{
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.item-name{
+  width: 225px;
+  padding-left: 9px;
+  padding-right: 9px;
+  vertical-align: middle;
+}
+
+.item-weight{
+  padding-left: 11px;
+  padding-right: 20px;
+
+}
+
+.item-weight-price{
+  color: #999999;
+}
+
+.total-sum{
+  color: #323232;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 14px;
+}
+
+
+.item-delete{
+  padding-right: 16px;
+}
+
+.modal-delete {
+  width: 11px;
+  height: 11px;
+
+  background-image: url("../img/svg/cross-small.svg");
+  background-repeat: no-repeat;
+}
+
+
+
+.basket-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+a.btn-basket{
+  display: block;
+  padding: 13px 15px 13px 14px;
+  color: #fefefe;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .modal-login {

@@ -37,12 +37,10 @@
               <a class="user-navigation__button search" aria-label="Поиск">
                 <span class="visually-hidden">Поиск</span>
               </a>
-              <section lass="user-navigation__search-form">
                 <form class="search-form" action="index.html" method="post">
                   <label class="visually-hidden" for="search">Поиск</label>
                   <input type="search" id="search" name="search" aria-label="Поиск на сайте" placeholder="Что ищем?">
                 </form>
-              </section>
             </li>
             <li class="user-navigation__profile">
               <a class="user-navigation__button login">
@@ -174,7 +172,7 @@
                   0%
                 </label>
                 <label class="fat-container">
-                  <input class="visually-hidden filter-input" type="radio" name="fat" value="10" id="10">
+                  <input class="visually-hidden filter-input" type="radio" name="fat" value="10" id="10" checked>
                   <span class="checkmark-radio"></span>
                   до 10%
                 </label>
@@ -196,12 +194,12 @@
               <label class="filter-title">Наполнители:</label>
               <div class="filter__paramaters fillers" id="filter">
                 <label class="fat-container">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="chocolate" value="chocolate" id="chocolate">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="chocolate" value="chocolate" id="chocolate" checked>
                   <span class="checkmark-checkbox"></span>
                   шоколадные
                 </label>
                 <label class="fat-container">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar" value="sugar" id="sugar">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar" value="sugar" id="sugar" checked>
                   <span class="checkmark-checkbox"></span>
                   сахарные присыпки
                 </label>
@@ -351,13 +349,13 @@
 
         <div class="content__pagination">
           <ul class="pagination-list">
-            <li class="pagination-item disabled"><a href="#">&lt;</a></li>
+            <li class="pagination-item disabled"><a><span class="visually-hidden">Предыдущая страница страница</span></a></li>
             <li class="pagination-item-current"><a>1</a></li>
             <li class="pagination-item"><a href="#">2</a></li>
             <li class="pagination-item"><a href="#">3</a></li>
             <li class="pagination-item"><a href="#">4</a></li>
             <li class="pagination-item"><a href="#">5</a></li>
-            <li class="pagination-item"><a href="#">&gt;</a></li>
+            <li class="pagination-item"><a href="#"><span class="visually-hidden">Следующая страница</span></a></li>
           </ul>
         </div>
       </section>

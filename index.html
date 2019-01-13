@@ -19,7 +19,7 @@
               <img src="img/svg/logo.svg" alt="Main logo" width="154" height="64">
             </a>
             <ul class="site-navigation">
-                <li><a href="#" aria-label="Каталог нашего мороженого">Каталог</a>
+                <li><a class="catalog-link" href="#" aria-label="Каталог нашего мороженого">Каталог</a>
                   <ul class="drop-menu">
                     <li><a class="new" href="#" aria-label="Новинки нашего мороженого"><strong>Новинки</strong></a></li>
                     <li><a class="drop-menu__link" href="catalog.html" aria-label="Сливочное мороженое">Сливочное</a></li>
@@ -104,19 +104,19 @@
             <h3 class="slide-title">
               Крем-брюле и пломбир с малиновым джемом
             </h3>
-            <a class="button1 slide-button" href="#">Давайте оба!</a>
+            <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
           <li class="slider-item slide" id="slide2">
             <h3 class="slide-title">
               Шоколадный пломбир и лимонный сорбет
             </h3>
-            <a class="button1 slide-button" href="#">Давайте оба!</a>
+            <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
           <li class="slider-item slide" id="slide3">
             <h3 class="slide-title">
               Пломбир с помадкой и клубничный щербет
             </h3>
-            <a class="button1 slide-button" href="#">Давайте оба!</a>
+            <a class="button slide-button" href="#">Давайте оба!</a>
           </li>
         </ul>
 
@@ -228,18 +228,18 @@
           <h2>Мы обязательно Вам ответим!</h2>
           <button class="modal-close btn" type="button"><span class="visually-hidden">Закрыть</span></button>
           <form class="feedback-form" action="index.html" method="post">
-            <p>
+            <div>
               <label class="visually-hidden" for="user-name">Как Вас зовут?</label>
               <input type="text" id="user-name" name="user-name" value="" placeholder="Как Вас зовут?">
-            </p>
-            <p>
+            </div>
+            <div>
               <label class="visually-hidden" for="user-mail">Ваша почта для ответа?</label>
               <input type="text" id="user-mail" name="user-mail" value="" placeholder="Ваша почта для ответа?">
-            </p>
-            <p>
+            </div>
+            <div>
               <label class="visually-hidden" for="user-message">Напишите что-нибудь</label>
               <textarea id="user-message" name="user-message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
-            </p>
+            </div>
             <button class="button modal-feedback-button" type="submit" name="button" aria-label="Отправить">Отправить</button>
           </form>
         </section>

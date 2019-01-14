@@ -281,7 +281,7 @@ input[type="text"]:focus {
   display: block;
 }
 
-.site-navigation li:first-child:hover .catalog-link{
+.site-navigation li:first-child:hover .catalog-link {
   color: #333333;
   background-color: #f7f6f3;
   border-radius: 20px;
@@ -333,6 +333,10 @@ input[type="text"]:focus {
 
 .drop-menu a:active {
   background-color: #f6b5a5;
+}
+
+.drop-menu__link.active {
+  background-color: #d07058;
 }
 
 .new:after {
@@ -397,8 +401,7 @@ input[type="text"]:focus {
 
 .user-navigation >li:hover .user-navigation__login-form,
 .user-navigation >li:hover .search-form,
-.user-navigation >li:hover .user-navigation__basket-list
- {
+.user-navigation >li:hover .user-navigation__basket-list {
   display: block;
 }
 
@@ -420,13 +423,12 @@ input[type="text"]:focus {
   background-color: #f8f7f4;
 }
 
-.user-navigation__search{
+.user-navigation__search {
   position: relative;
 }
 
 .search-form {
   position: absolute;
-
   right: 0;
   top: 35px;
   z-index: 22;
@@ -460,7 +462,7 @@ input[type="text"]:focus {
   border: 2px solid rgba(46, 136, 228, 0.52)
 }
 
-.user-navigation__profile{
+.user-navigation__profile {
   padding-bottom: 8px;
 }
 
@@ -605,30 +607,27 @@ input[type="text"]:focus {
   position: relative;
 }
 
-.user-navigation__basket-list{
+.user-navigation__basket-list {
   position: absolute;
   top:4px;
   right: 0;
   z-index: 5;
-
   display: none;
-
   width: 502px;
   min-height: 216px;
   padding: 20px 18px 0px;
-
-background-color: #f8f7f4;
-border-radius: 5px;
--webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 
 }
 
-.basket-list-table + hr{
+.basket-list-table + hr {
   margin-bottom: 10px;
 }
 
-.user-navigation__basket-list p{
+.user-navigation__basket-list p {
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -637,24 +636,23 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   color: #323232;
 }
 
-.item-name{
+.item-name {
   width: 225px;
   padding-left: 9px;
   padding-right: 9px;
   vertical-align: middle;
 }
 
-.item-weight{
+.item-weight {
   padding-left: 11px;
   padding-right: 20px;
-
 }
 
-.item-weight-price{
+.item-weight-price {
   color: #999999;
 }
 
-.total-sum{
+.total-sum {
   color: #323232;
   font-size: 15px;
   font-weight: 700;
@@ -663,27 +661,26 @@ box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 
-.item-delete{
+.item-delete {
   padding-right: 16px;
 }
 
 .modal-delete {
   width: 11px;
   height: 11px;
-
   background-image: url("../img/svg/cross-small.svg");
   background-repeat: no-repeat;
 }
 
 
 
-.basket-wrapper{
+.basket-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-a.btn-basket{
+a.btn-basket {
   display: block;
   padding: 13px 15px 13px 14px;
   color: #fefefe;
@@ -760,7 +757,7 @@ a.btn-basket{
   font-weight: 800;
 }
 
-.slide-button{
+.slide-button {
   padding: 12px 44px;
   font-weight: 600;
   font-size: 31px;
@@ -975,6 +972,7 @@ a.btn-basket{
 .list-item:hover::before {
   content: " ";
   position: absolute;
+  pointer-events: none;
   top: -7px;
   right: -13px;
   bottom: -35px;
@@ -1257,7 +1255,7 @@ a.btn-basket{
 .container__location_feedback {
   position: relative;
   left: -30px;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .container__location-wrapper {
@@ -1282,7 +1280,7 @@ a.btn-basket{
 
 .location__feedback {
   position: absolute;
-  top: 66px;
+  top: 60px;
   right: 24px;
   z-index: 2;
   display: -webkit-box;
@@ -1328,7 +1326,7 @@ a.btn-basket{
 }
 
 .address-phone {
-  margin-bottom: 0;
+  margin-top: 16px;
   max-width: 178px;
   font-size: 14px;
   font-weight: 400;
@@ -1341,7 +1339,7 @@ a.btn-basket{
 
 .btn-feedback {
   border: 0;
-  margin-top: 21px;
+  margin-top: 7px;
   padding: 13px 28px 13px;
   width: 256px;
   color: #fefefe;
@@ -1814,6 +1812,10 @@ a.btn-basket{
   margin-bottom: 18px;
 }
 
+.container__ice-creams {
+  margin-bottom: 43px;
+}
+
 .pagination-list {
   margin: 0;
   display: -webkit-box;
@@ -1822,7 +1824,6 @@ a.btn-basket{
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  margin-top: 42px;
   margin-bottom: 29px;
   list-style: none;
 }
@@ -1855,7 +1856,7 @@ a.btn-basket{
 .pagination-list li:last-child a{
   background-image: url("../img/svg/arrow-page.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   margin-right: 0;
 }
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Глейси</title>
 </head>
 <body>
@@ -15,9 +15,9 @@
     <header class="main-header">
         <nav class="main-navigation">
           <div class="site-navigation-wrapper">
-            <a class="main-header__logo" href="index.html">
+            <div class="main-header__logo">
               <img src="img/svg/logo.svg" alt="Main logo" width="154" height="64">
-            </a>
+            </div>
             <ul class="site-navigation">
                 <li><a class="catalog-link" href="#" aria-label="Каталог нашего мороженого">Каталог</a>
                   <ul class="drop-menu">
@@ -123,56 +123,60 @@
 
       <section class="container__banners">
         <h2 class="visually-hidden">Акции</h2>
-        <section class="container__banners__banner rawsberry">
+        <div class="container__banners__banner rawsberry">
             <h3 class="banner-title">Малинка даром!</h3>
             <p class="banner-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="button sale-btn" href="#">Хочу варенье!</a>
-        </section>
+        </div>
 
-        <section class="container__banners__banner chocolate">
+        <div class="container__banners__banner chocolate">
           <h3 class="banner-title">Шоколадки даром!</h3>
           <p class="banner-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="button sale-btn" href="#">Хочу шоколадки!</a>
-        </section>
+        </div>
       </section>
 
       <section class="container__hits">
         <ul class="hits-list">
-        <li class="list-item">
+
+          <li class="list-item">
             <figure class="list__ice-cream">
-                <img src="img/ice_creams/Creamy-with-orange-jam-and-citrus-chips.png" alt="Creamy with orange jam and citrus chips" width="267" height="267">
+                <img src="img/ice_creams/Creamy-with-orange-jam-and-citrus-chips.jpg" alt="Creamy with orange jam and citrus chips" width="267" height="267">
                 <p class="ice-cream__cost">310 <span class="ruble"> &#8381;</span><span class="wt">/кг</span></p>
                 <figcaption><a class="ice-cream__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
             </figure>
-            <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            <a href="#" class="button popup" aria-label="Быстрый просмотр">Быстрый просмотр</a>
+            </li>
 
-          </li>
           <li class="list-item">
             <figure class="list__ice-cream">
-              <img src="img/ice_creams/Creamy-coffee-with-chocolate-pieces.png" alt="Creamy coffee with chocolate pieces" width="267" height="267">
+              <img src="img/ice_creams/Creamy-coffee-with-chocolate-pieces.jpg" alt="Creamy coffee with chocolate pieces" width="267" height="267">
               <p class="ice-cream__cost">380 <span class="ruble">&#8381;</span><span class="wt">/кг</span></p>
               <figcaption><a class="ice-cream__link" href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
             </figure>
-            <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            <a href="#" class="button popup" aria-label="Быстрый просмотр">Быстрый просмотр</a>
           </li>
+
           <li class="list-item">
             <figure class="list__ice-cream">
-              <img src="img/ice_creams/Creamy-strawberry-with-white-chocolate-sprinkles.png" alt="Creamy strawberry with white chocolate sprinkles" width="267" height="267">
+              <img src="img/ice_creams/Creamy-strawberry-with-white-chocolate-sprinkles.jpg" alt="Creamy strawberry with white chocolate sprinkles" width="267" height="267">
               <p class="ice-cream__cost">355 <span class="ruble">&#8381;</span><span class="wt">/кг</span></p>
               <figcaption><a class="ice-cream__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></figcaption>
 
             </figure>
-            <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            <a href="#" class="button popup" aria-label="Быстрый просмотр">Быстрый просмотр</a>
           </li>
+
           <li class="list-item">
             <figure class="list__ice-cream">
-              <img src="img/ice_creams/Creamy-creme-brulee-with-caramel-sauce.png" alt="Creamy creme brulee with caramel sauce" width="267" height="267">
+              <img src="img/ice_creams/Creamy-creme-brulee-with-caramel-sauce.jpg" alt="Creamy creme brulee with caramel sauce" width="267" height="267">
               <p class="ice-cream__cost">415 <span class="ruble">&#8381;</span><span class="wt">/кг</span></p>
               <figcaption><a href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
 
             </figure>
-            <button class="button popup" type="button" name="button" aria-label="Быстрый просмотр">Быстрый просмотр</button>
+            <a href="#" class="button popup" aria-label="Быстрый просмотр">Быстрый просмотр</a>
           </li>
+
         </ul>
       </section>
 
@@ -208,7 +212,7 @@
           <div class="container__location-wrapper">
           <iframe src="https://yandex.ru/map-widget/v1/-/CBFhJSGypD" width="1200" height="430"></iframe>
             <img src="img/map.jpg" width="1200" height="430" alt="Карта офиса по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-            <section class="location__feedback">
+            <div class="location__feedback">
               <address class="location__feedback__adress">
                 <p class="address">Адрес главного офиса и офлайн-магазина:</p>
                 <a class="location-link" href="#" aria-label="Местонахождение">ул. Большая Конюшенная 19/8, Санкт-Петербург</a>
@@ -220,7 +224,7 @@
                 </p>
               </address>
               <button class="button btn-feedback" type="button" name="button">Форма обратной связи</button>
-            </section>
+            </div>
           </div>
         </section>
       </div>

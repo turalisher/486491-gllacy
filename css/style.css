@@ -1679,15 +1679,17 @@ a.btn-basket {
   opacity: 0.7;
 }
 
-.fat-container input[type="radio"]:checked+.checkmark-radio {
+.fat-container input[type="radio"]:checked+.checkmark-radio{
   background-image: url("../img/svg/radio-on.svg");
   opacity: 0.7;
 }
 
-.fat-container input[type="radio"]:hover+.checkmark-radio {
+.fat-container input[type="radio"]:hover+.checkmark-radio,
+.fat-container input[type="radio"]:focus+.checkmark-radio {
   background-image: url("../img/svg/radio-on.svg");
   opacity: 1;
 }
+
 
 .filter-title {
   -webkit-box-align: start;

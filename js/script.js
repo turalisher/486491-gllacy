@@ -1,12 +1,12 @@
-var link = document.querySelector(".btn-feedback");
-var popup = document.querySelector(".modal-feedback");
+var link = document.querySelector(".location__feedback__btn");
+var popup = document.querySelector(".modal__feedback");
 var overlay = document.querySelector(".modal-overlay");
-var close = document.querySelector(".modal-close");
+var close = document.querySelector(".modal__close");
 
 var login = popup.querySelector("[name=user-name]");
 var mail = popup.querySelector("[name=user-mail]");
 var message = popup.querySelector("[name=user-message]")
-var form = popup.querySelector(".feedback-form");
+var form = popup.querySelector(".modal__feedback-form");
 var isStorageSupport = true;
 var storage = "";
 
@@ -20,7 +20,7 @@ try {
 link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
-    overlay.classList.add("overlay--show");
+    overlay.classList.add("modal__overlay_show");
     if (storage) {
       login.value = storage;
       password.focus();
@@ -33,7 +33,7 @@ close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
   popup.classList.remove("modal-error");
-  overlay.classList.remove("overlay--show");
+  overlay.classList.remove("modal__overlay_show");
 });
 
 form.addEventListener("submit", function (evt) {
@@ -56,7 +56,7 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("modal-show")) {
       popup.classList.remove("modal-show");
       popup.classList.remove("modal-error");
-      overlay.classList.remove("overlay--show");
+      overlay.classList.remove("modal__overlay_show");
     }
   }
 });

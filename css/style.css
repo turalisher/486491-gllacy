@@ -356,7 +356,6 @@ input[type="text"]:focus {
   font-family: inherit;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-
   display: -webkit-box;
   display: -ms-flexbox;
   -webkit-box-pack: end;
@@ -397,9 +396,9 @@ input[type="text"]:focus {
   cursor: pointer;
 }
 
-.main-header__user-navigation>li:hover .main-header__user-navigation__login-form,
-.main-header__user-navigation>li:hover .search-form,
-.main-header__user-navigation>li:hover .main-header__user-navigation__basket-list {
+.main-header__user-navigation__profile:hover .main-header__user-navigation__login-form,
+.main-header__user-navigation__search:hover .search-form,
+.main-header__user-navigation__cart:hover .main-header__user-navigation__basket-list {
   display: block;
 }
 
@@ -563,7 +562,7 @@ input[type="text"]:focus {
   padding: 15px 25px 14px;
 }
 
-.main-header__user-navigation__main-header__user-navigation__button_cart a {
+.main-header__user-navigation__cart a {
   padding: 7px 17px 4px 25px;
   cursor: pointer;
   font-family: inherit;
@@ -742,7 +741,7 @@ input[type="text"]:focus {
 .gallery-slider__list {
   margin: 0;
   padding: 0;
-  list-style: 0;
+  list-style: none;
 }
 
 .gallery-slider__title {
@@ -945,14 +944,10 @@ input[type="text"]:focus {
   content: " ";
   position: relative;
   top: 6px;
-
-
   display: inline-block;
   width: 31px;
   height: 36px;
-
   vertical-align: top;
-
   background-image: url("../img/svg/ruble.svg");
   background-repeat: no-repeat;
 }
@@ -1353,7 +1348,7 @@ input[type="text"]:focus {
 }
 
 /* *****************************Footer************************************* */
-.main-footer{
+.main-footer {
   margin-bottom: 25px;
 }
 
@@ -1393,7 +1388,7 @@ input[type="text"]:focus {
   width: 32px;
   height: 32px;
   margin-right: 11px;
-  margin-bottom: 5px;
+  margin-bottom: -6px;
   border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1447,7 +1442,7 @@ input[type="text"]:focus {
 
 .main-footer__list {
   margin: 0;
-  padding: 0 auto;
+  padding: 0;
   width: 324px;
   margin-left: -34px;
   display: -webkit-box;
@@ -1503,7 +1498,7 @@ input[type="text"]:focus {
 
 .main-footer__copyright img {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .main-footer__copyright {
@@ -1668,13 +1663,13 @@ input[type="text"]:focus {
   opacity: 0.7;
 }
 
-.filter__fat__input:checked+.filter__fat__input__check{
+.filter__fat__input:checked + .filter__fat__input__check {
   background-image: url("../img/svg/radio-on.svg");
   opacity: 0.7;
 }
 
-.filter__fat__input:hover+.filter__fat__input__check,
-.filter__fat__input:focus+.filter__fat__input__check {
+.filter__fat__input:hover + .filter__fat__input__check,
+.filter__fat__input:focus + .filter__fat__input__check {
   background-image: url("../img/svg/radio-on.svg");
   opacity: 1;
 }
@@ -1727,7 +1722,7 @@ input[type="text"]:focus {
   opacity: 0.7;
 }
 
-.filter__filler__input:checked+.filter__filler__input__check {
+.filter__filler__input:checked + .filter__filler__input__check {
   background-image: url("../img/svg/checkbox-on.svg");
   opacity: 0.7;
 }
@@ -1846,8 +1841,8 @@ input[type="text"]:focus {
 .main-content__pagination__link,
 .current a {
   display: inline-block;
-  min-width: 23px;
-  height: 23px;
+  min-width: 24px;
+  height: 24px;
   margin-right: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -1857,7 +1852,7 @@ input[type="text"]:focus {
   text-decoration: none;
 }
 
-.main-content__pagination__item a{
+.main-content__pagination__item a {
   color: #ffffff;
 }
 
@@ -1895,18 +1890,18 @@ input[type="text"]:focus {
 
 /* modal */
 
-.modal-show {
+.modal_show {
   display: block;
   -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
 }
 
-.modal-error {
+.modal_error {
   -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
-.modal-overlay {
+.modal__overlay {
   position: fixed;
   content: "";
   display: none;
@@ -2052,13 +2047,11 @@ input[type="text"]:focus {
 }
 
 @-webkit-keyframes shake {
-
   0%,
   100% {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-
   10%,
   30%,
   50%,
@@ -2067,7 +2060,6 @@ input[type="text"]:focus {
     -webkit-transform: translate(-55%, -50%);
     transform: translate(-55%, -50%);
   }
-
   20%,
   40%,
   60%,
@@ -2078,13 +2070,11 @@ input[type="text"]:focus {
 }
 
 @keyframes shake {
-
   0%,
   100% {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-
   10%,
   30%,
   50%,
@@ -2093,7 +2083,6 @@ input[type="text"]:focus {
     -webkit-transform: translate(-55%, -50%);
     transform: translate(-55%, -50%);
   }
-
   20%,
   40%,
   60%,

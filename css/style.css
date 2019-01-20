@@ -1463,6 +1463,11 @@ input[type="text"]:focus {
 .main-footer__list {
   margin: 0;
   padding: 0;
+<<<<<<< HEAD
+=======
+  width: 324px;
+  margin-left: -34px;
+>>>>>>> 2da76721e0b7e3494231e20ce874db46cd47584a
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1669,13 +1674,17 @@ input[type="text"]:focus {
   opacity: 0.7;
 }
 
+<<<<<<< HEAD
 .filter__fat__input:checked+.filter__fat__input__check {
+=======
+.filter__fat__input:checked + .filter__fat__input__check {
+>>>>>>> 2da76721e0b7e3494231e20ce874db46cd47584a
   background-image: url("../img/svg/radio-on.svg");
   opacity: 0.7;
 }
 
-.filter__fat__input:hover+.filter__fat__input__check,
-.filter__fat__input:focus+.filter__fat__input__check {
+.filter__fat__input:hover + .filter__fat__input__check,
+.filter__fat__input:focus + .filter__fat__input__check {
   background-image: url("../img/svg/radio-on.svg");
   opacity: 1;
 }
@@ -1727,7 +1736,7 @@ input[type="text"]:focus {
   opacity: 0.7;
 }
 
-.filter__filler__input:checked+.filter__filler__input__check {
+.filter__filler__input:checked + .filter__filler__input__check {
   background-image: url("../img/svg/checkbox-on.svg");
   opacity: 0.7;
 }
@@ -1895,6 +1904,10 @@ input[type="text"]:focus {
 }
 
 /* modal */
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2da76721e0b7e3494231e20ce874db46cd47584a
 .modal_show {
   display: block;
   -webkit-animation: bounce 0.6s;
@@ -2065,13 +2078,11 @@ input[type="text"]:focus {
 }
 
 @-webkit-keyframes shake {
-
   0%,
   100% {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-
   10%,
   30%,
   50%,
@@ -2080,7 +2091,6 @@ input[type="text"]:focus {
     -webkit-transform: translate(-55%, -50%);
     transform: translate(-55%, -50%);
   }
-
   20%,
   40%,
   60%,
@@ -2091,13 +2101,11 @@ input[type="text"]:focus {
 }
 
 @keyframes shake {
-
   0%,
   100% {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-
   10%,
   30%,
   50%,
@@ -2106,7 +2114,6 @@ input[type="text"]:focus {
     -webkit-transform: translate(-55%, -50%);
     transform: translate(-55%, -50%);
   }
-
   20%,
   40%,
   60%,

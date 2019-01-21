@@ -107,7 +107,7 @@ a:focus,
   color: #999999;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1;
 }
 
 .search-form__input::-moz-placeholder,
@@ -118,7 +118,7 @@ a:focus,
   color: #999999;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1;
 }
 
 .search-form__input:-ms-input-placeholder,
@@ -129,7 +129,7 @@ a:focus,
   color: #999999;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1;
 }
 
 .search-form__input:-moz-placeholder,
@@ -140,7 +140,7 @@ a:focus,
   color: #999999;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1;
 }
 
 .visually-hidden {
